@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c2228b3576e58d3418474a6f3c05613b
+guid: e9aefc9ce8b0b4041bcf2867047cd7f3
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -7,8 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: lambert1
-    second: {fileID: 2100000, guid: 6aebcb972c3db7048b726c1a78856968, type: 2}
+      name: candle_mat
+    second: {fileID: 2100000, guid: a1b3b7c11fc6fcb4c80f0ba77e389333, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wick_mat
+    second: {fileID: 2100000, guid: 84b57c20bf0002047ac5632f5b3f4d0d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

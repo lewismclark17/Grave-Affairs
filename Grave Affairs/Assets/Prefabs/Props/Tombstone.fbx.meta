@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c2228b3576e58d3418474a6f3c05613b
+guid: f146ddcee65e9c3478580481dc205f02
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -7,8 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: lambert1
-    second: {fileID: 2100000, guid: 6aebcb972c3db7048b726c1a78856968, type: 2}
+      name: black_mat
+    second: {fileID: 2100000, guid: 9cc29aa63b41d5d4696b6f59b768dd73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grave_mat
+    second: {fileID: 2100000, guid: 681e9a54847b7c842b9571319c946e99, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skull_mat
+    second: {fileID: 2100000, guid: cb336a952c5d30b41961dc4e1d43a6f8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
