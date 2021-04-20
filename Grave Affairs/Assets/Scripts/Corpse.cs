@@ -11,6 +11,7 @@ public class Corpse : MonoBehaviour
         GetComponent<Rigidbody>().useGravity = false;
         this.transform.position = Interact.position;
         this.transform.parent = GameObject.Find("Interactor").transform;
+
     }
 
     public void OnRelease()
