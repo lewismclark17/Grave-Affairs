@@ -78,12 +78,12 @@ public class PlayerController : MonoBehaviour
             GameObject corpse = GetCorpse();
             if (corpse != null)
             {
-                //Debug.Log("CORPSE" + corpse.name);
+                Debug.Log("CORPSE" + corpse.name);
                 carriedCorpse = corpse;
                 Rigidbody rigy = corpse.GetComponent<Rigidbody>();
                 rigy.useGravity = false;
-                rigy.freezeRotation = true;
-                rigy.isKinematic = true;
+                //rigy.freezeRotation = true;
+                //rigy.isKinematic = true;
                 corpse.transform.position = dragspot.transform.position;
                 corpse.transform.parent = dragspot.transform;
             } 
@@ -92,8 +92,8 @@ public class PlayerController : MonoBehaviour
         {
             Rigidbody rigy = carriedCorpse.GetComponent<Rigidbody>();
             rigy.useGravity = true;
-            rigy.freezeRotation = false;
-            rigy.isKinematic = false;
+            //rigy.freezeRotation = false;
+            //rigy.isKinematic = false;
             carriedCorpse.transform.parent = null;
             carriedCorpse = null;
         }
