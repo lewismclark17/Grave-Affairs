@@ -5,6 +5,12 @@ using UnityEngine;
 public class Corpse : MonoBehaviour
 {
     public Transform Interact;
+    public Rigidbody dragspot;
+
+    /*void FixedUpdate()
+    {
+        dragspot.MovePosition(dragspot.position + Vector3.up * Time.deltaTime);
+    }*/
 
     public void OnPress()
     {

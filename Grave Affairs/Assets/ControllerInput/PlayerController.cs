@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject interactor, dragspot;
 
-    GameObject carriedCorpse = null;
+    Corpse carriedCorpse = null;
 
     void Start()
     {
@@ -25,6 +25,10 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (carriedCorpse)
+        {
+            carriedCorpse.dragspot.MovePosition(dragspot.transform.position);
+        }
     }
 
     public void OnMove(InputValue input)
@@ -54,7 +58,7 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    GameObject GetCorpse()
+    Corpse GetCorpse()
     {
         Collider[] hitcolliders = Physics.OverlapBox(
             interactor.transform.position, 
@@ -63,9 +67,10 @@ public class PlayerController : MonoBehaviour
         
         foreach (Collider col in hitcolliders)
         {
-            if (col.gameObject.GetComponent<Corpse>() != null)
+            Corpse target = col.gameObject.GetComponentInParent<Corpse>(); 
+            if (target != null)
             {
-                return col.gameObject;
+                return target;
             }
         }
         return null;
@@ -75,26 +80,30 @@ public class PlayerController : MonoBehaviour
     {
         if (carriedCorpse == null)
         {
-            GameObject corpse = GetCorpse();
+            Corpse corpse = GetCorpse();
             if (corpse != null)
             {
                 Debug.Log("CORPSE" + corpse.name);
                 carriedCorpse = corpse;
-                Rigidbody rigy = corpse.GetComponent<Rigidbody>();
+                carriedCorpse.dragspot.GetComponent<Rigidbody>().isKinematic = true;
+                /*SpringJoint sj = dragspot.AddComponent<SpringJoint>();
+                sj.connectedBody = corpse.dragspot;
+                /*Rigidbody rigy = corpse.GetComponent<Rigidbody>();
                 rigy.useGravity = false;
-                //rigy.freezeRotation = true;
-                //rigy.isKinematic = true;
+                rigy.freezeRotation = true;
+                rigy.isKinematic = true;
                 corpse.transform.position = dragspot.transform.position;
-                corpse.transform.parent = dragspot.transform;
+                corpse.transform.parent = dragspot.transform;*/
             } 
         }
         else
         {
-            Rigidbody rigy = carriedCorpse.GetComponent<Rigidbody>();
+            /*Rigidbody rigy = carriedCorpse.GetComponent<Rigidbody>();
             rigy.useGravity = true;
-            //rigy.freezeRotation = false;
-            //rigy.isKinematic = false;
-            carriedCorpse.transform.parent = null;
+            rigy.freezeRotation = false;
+            rigy.isKinematic = false;
+            carriedCorpse.transform.parent = null;*/
+            carriedCorpse.dragspot.GetComponent<Rigidbody>().isKinematic = false;
             carriedCorpse = null;
         }
     }
