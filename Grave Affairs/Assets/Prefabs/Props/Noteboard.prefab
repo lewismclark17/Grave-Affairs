@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1868758866749498891}
   - component: {fileID: 3332929653621402030}
   - component: {fileID: 694687481343827300}
+  - component: {fileID: -6888573712811624600}
   m_Layer: 0
   m_Name: Noteboard
   m_TagString: Untagged
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-6888573712811624600
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343474451891059889}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8632993429437876281, guid: 8d5b3a70fab52df49a28f72eb09da91c, type: 3}

@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 5a854a55c73b50b4a868a4b55650c529
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ProtoLevel.unity
     guid: 3f53a8fb25feac5408e6cde96d76b456
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GameOver.unity
     guid: 2935cc327209c2a40b08be31ce7cda14
   - enabled: 1

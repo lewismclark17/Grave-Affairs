@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2147605374469643559}
   - component: {fileID: 3054012434616717954}
   - component: {fileID: 974747195991680584}
+  - component: {fileID: 6159909910909414979}
   m_Layer: 0
   m_Name: Crucifix
   m_TagString: Untagged
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6159909910909414979
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622988122634307485}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -856059019632272089, guid: 54ab2d2a5b4eb734fb8ea464c4690663, type: 3}

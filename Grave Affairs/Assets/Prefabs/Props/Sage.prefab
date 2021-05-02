@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5459816800750164138}
   - component: {fileID: 8965243981422352143}
   - component: {fileID: 6597217854434812869}
+  - component: {fileID: 6869212020945693484}
   m_Layer: 0
   m_Name: Sage
   m_TagString: Untagged
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6869212020945693484
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4651931302580978192}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3473954407985362598, guid: be6345c94dc856a4e8a27d86dfd33178, type: 3}

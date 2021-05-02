@@ -6,11 +6,10 @@ public class CorpseHole : MonoBehaviour
 {
     public Score score;
 
-    void OnCollisionEnter (Collision col)
+    void OnTriggerEnter (Collider col)
     {
-        if(col.gameObject.tag == "corpse")
+        if(col.tag == "corpse")
         {
-            Destroy(col.gameObject);
             score.AddToScore();
         }
     }

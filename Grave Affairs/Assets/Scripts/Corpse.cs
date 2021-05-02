@@ -25,4 +25,15 @@ public class Corpse : MonoBehaviour
         this.transform.parent = null;
         GetComponent<Rigidbody>().useGravity = true;
     }
+
+    public void DropCorpse()
+    {
+        StartCoroutine(DropAfterDelay(0.1f));
+    }
+
+    IEnumerator DropAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        dragspot.GetComponent<Rigidbody>().isKinematic = false;
+    }
 }

@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     
     public float speed = 5.0f;
 
-    public GameObject interactor, dragspot;
+    public GameObject interactor, dragspot, throwspot;
 
     Corpse carriedCorpse = null;
 
@@ -86,24 +86,12 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("CORPSE" + corpse.name);
                 carriedCorpse = corpse;
                 carriedCorpse.dragspot.GetComponent<Rigidbody>().isKinematic = true;
-                /*SpringJoint sj = dragspot.AddComponent<SpringJoint>();
-                sj.connectedBody = corpse.dragspot;
-                /*Rigidbody rigy = corpse.GetComponent<Rigidbody>();
-                rigy.useGravity = false;
-                rigy.freezeRotation = true;
-                rigy.isKinematic = true;
-                corpse.transform.position = dragspot.transform.position;
-                corpse.transform.parent = dragspot.transform;*/
             } 
         }
         else
         {
-            /*Rigidbody rigy = carriedCorpse.GetComponent<Rigidbody>();
-            rigy.useGravity = true;
-            rigy.freezeRotation = false;
-            rigy.isKinematic = false;
-            carriedCorpse.transform.parent = null;*/
-            carriedCorpse.dragspot.GetComponent<Rigidbody>().isKinematic = false;
+            carriedCorpse.dragspot.MovePosition(throwspot.transform.position);
+            carriedCorpse.DropCorpse();
             carriedCorpse = null;
         }
     }

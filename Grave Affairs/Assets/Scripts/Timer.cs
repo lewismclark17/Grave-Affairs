@@ -25,10 +25,6 @@ public class Timer : MonoBehaviour
         float percentage = currentTime / rotationTime;
         Quaternion rotation = Quaternion.Euler(0, 0, -360 * percentage);
         timerHand.transform.rotation = rotation;
-        if (percentage > 1)
-        {
-            SceneManager.LoadScene("GameOver");
-        }
         if (percentage > 0.25f)
         {
             timerCircleImage.color = new Color(timerColour1.r, timerColour1.g, timerColour1.b);

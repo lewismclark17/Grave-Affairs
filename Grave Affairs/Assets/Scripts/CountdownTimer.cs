@@ -7,13 +7,17 @@ using UnityEngine.SceneManagement;
 public class CountdownTimer : MonoBehaviour
 {
     float currentTime = 0f;
-    float startingTime = 60f;
+    float startingTime = 300f;
+    public Image winScreen;
+    public Image loseScreen;
 
     [SerializeField] Text countdownText;
 
     void Start()
     {
         currentTime = startingTime;
+        winScreen.enabled = false;
+        loseScreen.enabled = false;
     }
 
     void Update()
@@ -25,7 +29,16 @@ public class CountdownTimer : MonoBehaviour
         }
         else
         {
-           SceneManager.LoadScene("GameOver");
+        
+            if (Score.currentScore > 14)
+            {
+                winScreen.enabled = true;
+            }
+                
+            else
+            {
+                loseScreen.enabled = true;
+            }
         }
     }
 }

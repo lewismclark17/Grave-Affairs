@@ -15,7 +15,6 @@ public class CharController : MonoBehaviour
         forward.y = 0;
         forward = Vector3.Normalize(forward);
         right = Quaternion.Euler(new Vector3(0, 90, 0)) * forward;
-
     }
 
     void Update()

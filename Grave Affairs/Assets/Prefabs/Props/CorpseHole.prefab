@@ -41,8 +41,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 40988204570643829}
+  - component: {fileID: -4001394525307036783}
   m_Layer: 0
-  m_Name: Hole3 (1)
+  m_Name: CorpseHole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63,6 +64,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &-4001394525307036783
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854080989823653839}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &3444379851717845183
 GameObject:
   m_ObjectHideFlags: 0

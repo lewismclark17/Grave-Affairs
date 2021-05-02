@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2991865335032503635}
   - component: {fileID: 2173802928021033718}
   - component: {fileID: 4165285908204299836}
+  - component: {fileID: -7362771716080930159}
   m_Layer: 0
   m_Name: HolyBookRed
   m_TagString: Untagged
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-7362771716080930159
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2508202657699235817}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8858055878887276158, guid: ae0daa0c2e6b2ca4f9821100a30a74ea, type: 3}
