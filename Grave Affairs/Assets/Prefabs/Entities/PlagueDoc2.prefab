@@ -72,6 +72,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlagueDoc2
       objectReference: {fileID: 0}
+    - target: {fileID: 8610977375140667091, guid: ee29e0e418766d2468838bbe42cabffe,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee29e0e418766d2468838bbe42cabffe, type: 3}
 --- !u!4 &8578252459437716832 stripped

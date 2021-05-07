@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject interactor, dragspot, throwspot;
 
+    public GameObject variant1, variant2, variant3, variant4; 
+
     Corpse carriedCorpse = null;
 
     void Start()
@@ -21,6 +23,8 @@ public class PlayerController : MonoBehaviour
         forward.y = 0;
         forward = Vector3.Normalize(forward);
         right = Quaternion.Euler(new Vector3(0, 90, 0)) * forward;
+        int numberOfPlayers = GameObject.FindGameObjectsWithTag("Player").Length;
+        SetVariant(numberOfPlayers);
     }
 
     void Update()
@@ -100,5 +104,25 @@ public class PlayerController : MonoBehaviour
     public void FixedUpdate() 
     {
         transform.position += heading * speed * Time.fixedDeltaTime;
+    }
+
+    void SetVariant(int variant)
+    {
+        if (variant == 1)
+        {
+            variant1.SetActive(true);
+        }
+        else if (variant == 2)
+        {
+            variant2.SetActive(true);
+        }
+        else if (variant == 3)
+        {
+            variant3.SetActive(true);
+        }
+        else if (variant == 4)
+        {
+            variant4.SetActive(true);
+        }
     }
 }
