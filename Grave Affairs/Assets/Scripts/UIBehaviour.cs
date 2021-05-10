@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class CountdownTimer : MonoBehaviour
+public class UIBehaviour : MonoBehaviour
 {
     float currentTime = 0f;
-    float startingTime = 300f;
+    float startingTime = 180f;
     public Image winScreen;
     public Image loseScreen;
 
@@ -25,7 +25,7 @@ public class CountdownTimer : MonoBehaviour
         if (currentTime > 0)
         {
             currentTime -= 1 * Time.deltaTime;
-            countdownText.text = currentTime.ToString ("f0");
+            //countdownText.text = currentTime.ToString ("f0");
         }
         else
         {

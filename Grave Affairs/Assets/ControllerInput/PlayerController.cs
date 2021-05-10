@@ -13,7 +13,11 @@ public class PlayerController : MonoBehaviour
 
     public GameObject interactor, dragspot, throwspot;
 
-    public GameObject variant1, variant2, variant3, variant4; 
+    public GameObject variant1, variant2, variant3, variant4;
+
+    //public GameObject pauseMenu;
+
+    //public bool isPaused;
 
     Corpse carriedCorpse = null;
 
@@ -25,6 +29,8 @@ public class PlayerController : MonoBehaviour
         right = Quaternion.Euler(new Vector3(0, 90, 0)) * forward;
         int numberOfPlayers = GameObject.FindGameObjectsWithTag("Player").Length;
         SetVariant(numberOfPlayers);
+        //pauseMenu.SetActive(false);
+        //isPaused = false;
     }
 
     void Update()
@@ -99,7 +105,30 @@ public class PlayerController : MonoBehaviour
             carriedCorpse = null;
         }
     }
-    
+
+    /*public void onPause()
+    {
+        if (isPaused == false)
+        {
+            PauseGame();
+        }
+        else
+        {
+            ResumeGame();
+        }
+    }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0f;
+        pauseMenu.SetActive(true);
+    } 
+
+    public void ResumeGame()
+    {
+        Time.timeScale = 1f;
+        pauseMenu.SetActive(false); 
+    }*/ 
 
     public void FixedUpdate() 
     {

@@ -3,7 +3,15 @@ guid: 558f4cd613af5ad47a265deda984ff01
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - interactor: {instanceID: 0}
+  - dragspot: {instanceID: 0}
+  - throwspot: {instanceID: 0}
+  - variant1: {instanceID: 0}
+  - variant2: {instanceID: 0}
+  - variant3: {instanceID: 0}
+  - variant4: {instanceID: 0}
+  - pauseMenu: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
