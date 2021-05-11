@@ -8,9 +8,10 @@ public class CorpseHole : MonoBehaviour
 
     void OnTriggerEnter (Collider col)
     {
-        if(col.tag == "corpse")
+        if(col.gameObject.tag == "corpse")
         {
             score.AddToScore();
+            col.gameObject.tag ="corpseinhole";
         }
     }
 }

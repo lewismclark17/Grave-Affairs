@@ -10,6 +10,11 @@ public class InstructionText : MonoBehaviour
     private float timeToAppear = 5f;
     private float timeWhenDisappear;
 
+    void Awake()
+    {
+        instructions.enabled = false;
+    }
+
     void Start()
     {
         instructions.enabled = true;

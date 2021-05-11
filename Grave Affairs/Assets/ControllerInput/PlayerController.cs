@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,6 +12,8 @@ public class PlayerController : MonoBehaviour
     Vector2 move;
     
     public float speed = 5.0f;
+
+    public static int numberOfPlayers;
 
     public GameObject interactor, dragspot, throwspot;
 
@@ -21,13 +25,15 @@ public class PlayerController : MonoBehaviour
 
     Corpse carriedCorpse = null;
 
+    [SerializeField] TMPro.TextMeshProUGUI instructions;
+
     void Start()
     {
         forward = Camera.main.transform.forward;
         forward.y = 0;
         forward = Vector3.Normalize(forward);
         right = Quaternion.Euler(new Vector3(0, 90, 0)) * forward;
-        int numberOfPlayers = GameObject.FindGameObjectsWithTag("Player").Length;
+        numberOfPlayers = GameObject.FindGameObjectsWithTag("Player").Length;
         SetVariant(numberOfPlayers);
         //pauseMenu.SetActive(false);
         //isPaused = false;
@@ -144,14 +150,17 @@ public class PlayerController : MonoBehaviour
         else if (variant == 2)
         {
             variant2.SetActive(true);
+            gameObject.transform.position += Vector3.back*3;
         }
         else if (variant == 3)
         {
             variant3.SetActive(true);
+            gameObject.transform.position += Vector3.back*6;
         }
         else if (variant == 4)
         {
             variant4.SetActive(true);
+            gameObject.transform.position += Vector3.back*9;
         }
     }
 }

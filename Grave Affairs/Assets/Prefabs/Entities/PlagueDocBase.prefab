@@ -204,9 +204,8 @@ MonoBehaviour:
   variant2: {fileID: 6105806382823304283}
   variant3: {fileID: 3944348482198429999}
   variant4: {fileID: 4702048953062512622}
-  pauseMenu: {fileID: 2031670306125583018, guid: 18b6e8dddbcf96d4f8b52a8d56a4af34,
+  instructions: {fileID: 4515168270667858314, guid: 5c228c34f086d0149b48a1f3a1f0aee8,
     type: 3}
-  isPaused: 0
 --- !u!1 &4749728089756208925
 GameObject:
   m_ObjectHideFlags: 0
