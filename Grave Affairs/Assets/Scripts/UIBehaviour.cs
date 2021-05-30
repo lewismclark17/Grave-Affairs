@@ -7,9 +7,9 @@ using UnityEngine.SceneManagement;
 public class UIBehaviour : MonoBehaviour
 {
     float currentTime = 0f;
-    float startingTime = 180f;
-    public Image winScreen;
-    public Image loseScreen;
+    float startingTime = 20f;
+    public GameObject winScreen;
+    public GameObject loseScreen;
     public Text score;
     public GameObject exitButton;
 
@@ -18,8 +18,8 @@ public class UIBehaviour : MonoBehaviour
     void Start()
     {
         currentTime = startingTime;
-        winScreen.enabled = false;
-        loseScreen.enabled = false;
+        winScreen.SetActive(false);
+        loseScreen.SetActive(false);
         score.enabled = false;
         exitButton.SetActive(false);
     }
@@ -37,31 +37,31 @@ public class UIBehaviour : MonoBehaviour
         
             if (Score.currentScore > 9 && PlayerController.numberOfPlayers == 1)
             {
-                winScreen.enabled = true;
+                winScreen.SetActive(true);
                 score.enabled = true;
                 exitButton.SetActive(true);
             }
             else if (Score.currentScore > 14 && PlayerController.numberOfPlayers == 2)
             {
-                winScreen.enabled = true;
+                winScreen.SetActive(true);
                 score.enabled = true;
                 exitButton.SetActive(true);
             }
             else if (Score.currentScore > 19 && PlayerController.numberOfPlayers == 3)
             {
-                winScreen.enabled = true;
+                winScreen.SetActive(true);
                 score.enabled = true;
                 exitButton.SetActive(true);
             }
             else if (Score.currentScore > 24 && PlayerController.numberOfPlayers == 4)
             {
-                winScreen.enabled = true;
+                winScreen.SetActive(true);
                 score.enabled = true;
                 exitButton.SetActive(true); 
             } 
             else
             {
-                loseScreen.enabled = true;
+                loseScreen.SetActive(true);
                 score.enabled = true;
                 exitButton.SetActive(true);
             }
