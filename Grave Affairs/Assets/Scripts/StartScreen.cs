@@ -46,6 +46,7 @@ public class StartScreen : MonoBehaviour
         else
         {
             SceneManager.LoadScene("MainMenu");
+            Time.timeScale = 1f;
         }
         
     }
