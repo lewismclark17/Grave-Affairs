@@ -407,6 +407,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bookshelf
       objectReference: {fileID: 0}
+    - target: {fileID: 1792753073448471994, guid: c6292d69f89aae14694455f678b421c7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6292d69f89aae14694455f678b421c7, type: 3}
 --- !u!4 &3831374581479944863 stripped

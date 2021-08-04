@@ -16,15 +16,15 @@ MonoBehaviour:
   m_AdvancedMode: 0
   threshold:
     m_OverrideState: 1
-    m_Value: 0.55
+    m_Value: 0.6
     min: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.7
     min: 0
   scatter:
     m_OverrideState: 1
-    m_Value: 0.246
+    m_Value: 0.2
     min: 0
     max: 1
   clamp:
@@ -49,7 +49,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {fileID: 0}
   dirtIntensity:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
     min: 0
 --- !u!114 &-7530635653504675516
@@ -183,15 +183,15 @@ MonoBehaviour:
   m_AdvancedMode: 0
   postExposure:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.5
   contrast:
-    m_OverrideState: 0
-    m_Value: -6
+    m_OverrideState: 1
+    m_Value: -2
     min: -100
     max: 100
   colorFilter:
     m_OverrideState: 1
-    m_Value: {r: 0.9481132, g: 0.9481132, b: 1, a: 1}
+    m_Value: {r: 0.93249, g: 0.9292453, b: 1, a: 1}
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
