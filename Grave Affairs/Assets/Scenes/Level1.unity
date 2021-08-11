@@ -5160,7 +5160,7 @@ Transform:
   - {fileID: 543450653050485814}
   - {fileID: 1574268183}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &125838679
 MonoBehaviour:
@@ -15765,7 +15765,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &322061101 stripped
 Transform:
@@ -20337,7 +20337,7 @@ Transform:
   - {fileID: 1875480795}
   - {fileID: 272717197}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &415513592 stripped
 Transform:
@@ -21851,12 +21851,12 @@ PrefabInstance:
     - target: {fileID: 868731116464201895, guid: 9b54e315a2038914ebeb2e1105895916,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.37
+      value: -0.7
       objectReference: {fileID: 0}
     - target: {fileID: 868731116464201895, guid: 9b54e315a2038914ebeb2e1105895916,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.33
+      value: 3.3
       objectReference: {fileID: 0}
     - target: {fileID: 868731116464201895, guid: 9b54e315a2038914ebeb2e1105895916,
         type: 3}
@@ -21881,17 +21881,17 @@ PrefabInstance:
     - target: {fileID: 868731117551481595, guid: 9b54e315a2038914ebeb2e1105895916,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -145.7
+      value: -144.9
       objectReference: {fileID: 0}
     - target: {fileID: 868731117551481595, guid: 9b54e315a2038914ebeb2e1105895916,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 50.65
+      value: 52.4
       objectReference: {fileID: 0}
     - target: {fileID: 868731117551481595, guid: 9b54e315a2038914ebeb2e1105895916,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -150.97
+      value: -150.4
       objectReference: {fileID: 0}
     - target: {fileID: 868731117551481595, guid: 9b54e315a2038914ebeb2e1105895916,
         type: 3}
@@ -32963,6 +32963,7 @@ Transform:
   - {fileID: 355181861}
   - {fileID: 1041610199}
   - {fileID: 1476256346}
+<<<<<<< Updated upstream
   - {fileID: 9930634}
   - {fileID: 1409419904}
   - {fileID: 1866188063}
@@ -32976,6 +32977,8 @@ Transform:
   - {fileID: 394762568}
   - {fileID: 1514963367}
   - {fileID: 174053007}
+=======
+>>>>>>> Stashed changes
   m_Father: {fileID: 1629621743}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -56344,6 +56347,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 694510014}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1311618720
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2561791575905213673, guid: cd5d6b96f2000684faf2a6d0a344d665,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561791575905213673, guid: cd5d6b96f2000684faf2a6d0a344d665,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.2313957
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561791575905213673, guid: cd5d6b96f2000684faf2a6d0a344d665,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.7399998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561791575905213673, guid: cd5d6b96f2000684faf2a6d0a344d665,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.56502056
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561791575905213673, guid: cd5d6b96f2000684faf2a6d0a344d665,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561791575905213673, guid: cd5d6b96f2000684faf2a6d0a344d665,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561791575905213673, guid: cd5d6b96f2000684faf2a6d0a344d665,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561791575905213673, guid: cd5d6b96f2000684faf2a6d0a344d665,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561791575905213673, guid: cd5d6b96f2000684faf2a6d0a344d665,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561791575905213673, guid: cd5d6b96f2000684faf2a6d0a344d665,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561791575905213673, guid: cd5d6b96f2000684faf2a6d0a344d665,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938211115070080595, guid: cd5d6b96f2000684faf2a6d0a344d665,
+        type: 3}
+      propertyPath: m_Name
+      value: PlagueDoc1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cd5d6b96f2000684faf2a6d0a344d665, type: 3}
 --- !u!1001 &1314881080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71249,7 +71321,11 @@ Transform:
   - {fileID: 582476589}
   - {fileID: 400289411}
   - {fileID: 1563892087}
+<<<<<<< Updated upstream
   - {fileID: 26948742}
+=======
+  - {fileID: 1649877814}
+>>>>>>> Stashed changes
   - {fileID: 1980044294}
   - {fileID: 527773776}
   - {fileID: 495857441}
@@ -71258,6 +71334,12 @@ Transform:
   - {fileID: 768528334}
   - {fileID: 1990069440}
   - {fileID: 666730007}
+<<<<<<< Updated upstream
+=======
+  - {fileID: 1210508420}
+  - {fileID: 1131091909}
+  - {fileID: 26948742}
+>>>>>>> Stashed changes
   - {fileID: 1868326374}
   - {fileID: 1785872502}
   - {fileID: 339602670}
@@ -71763,7 +71845,11 @@ Transform:
   m_LocalScale: {x: 4.102625, y: 4.1026244, z: 4.102625}
   m_Children: []
   m_Father: {fileID: 1629621743}
+<<<<<<< Updated upstream
   m_RootOrder: 61
+=======
+  m_RootOrder: 74
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!65 &1649877815
 BoxCollider:
