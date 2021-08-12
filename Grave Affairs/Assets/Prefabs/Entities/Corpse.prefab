@@ -126,3 +126,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Interact: {fileID: 0}
+  dragspot: {fileID: 0}
