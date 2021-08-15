@@ -6,24 +6,23 @@ public class Corpse : MonoBehaviour
 {
     public Transform Interact;
     public Rigidbody dragspot;
+    public Material burnt;
+    public string actualBodyName;
 
     /*void FixedUpdate()
     {
         dragspot.MovePosition(dragspot.position + Vector3.up * Time.deltaTime);
     }*/
-
-    public void OnPress()
+    public void Burn()
     {
-        GetComponent<Rigidbody>().useGravity = false;
-        this.transform.position = Interact.position;
-        this.transform.parent = GameObject.Find("Interactor").transform;
-
+        GameObject actualBody = transform.Find(actualBodyName).gameObject;
+        actualBody.GetComponent<Renderer>().material = burnt;
+        StartCoroutine(DestroyAfterDelay());
     }
 
-    public void OnRelease()
+    public bool IsBeingCarried()
     {
-        this.transform.parent = null;
-        GetComponent<Rigidbody>().useGravity = true;
+        return dragspot.GetComponent<Rigidbody>().isKinematic;
     }
 
     public void DropCorpse()
@@ -34,6 +33,15 @@ public class Corpse : MonoBehaviour
     IEnumerator DropAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        dragspot.GetComponent<Rigidbody>().isKinematic = false;
+        if (dragspot != null)
+        {
+            dragspot.GetComponent<Rigidbody>().isKinematic = false;
+        }
+    }
+
+    IEnumerator DestroyAfterDelay()
+    {
+        yield return new WaitForSeconds(0.2f);
+        Destroy(gameObject);
     }
 }

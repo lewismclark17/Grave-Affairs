@@ -6,6 +6,7 @@ TagManager:
   tags:
   - corpse
   - corpseinhole
+  - burntcorpse
   layers:
   - Default
   - TransparentFX

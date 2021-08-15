@@ -6,12 +6,20 @@ public class Furnace : MonoBehaviour
 {
     public Score score;
 
-    void OnTriggerEnter (Collider col)
+    void OnTriggerStay (Collider col)
     {
         if(col.gameObject.tag == "corpse")
         {
-            score.AddToScore();
-            Destroy(col.gameObject);
+            Corpse corpse = col.gameObject.GetComponentInParent<Corpse>();
+            if (corpse.gameObject.tag == "corpse")
+            {
+                if (!corpse.IsBeingCarried())
+                {
+                    score.AddToScore();
+                    corpse.Burn();
+                    corpse.gameObject.tag = "burntcorpse";
+                }
+            }
         }
     }
 }
