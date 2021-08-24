@@ -18,7 +18,12 @@ public class Cart : MonoBehaviour
     IEnumerator CorpseMagic()
     {
         yield return new WaitForSeconds(sec);
-        CartCorpses.SetActive(false);
-        ActualCorpses.SetActive(true);
+        //CartCorpses.SetActive(false);
+        //ActualCorpses.SetActive(true);
+        /*foreach(Transform child in transform)
+        {
+            child.parent = null;
+        }*/
+        CartCorpses.transform.parent = null;
     }
 }

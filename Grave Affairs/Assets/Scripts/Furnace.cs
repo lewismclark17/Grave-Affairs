@@ -15,9 +15,12 @@ public class Furnace : MonoBehaviour
             {
                 if (!corpse.IsBeingCarried())
                 {
-                    score.AddToScore();
                     corpse.Burn();
                     corpse.gameObject.tag = "burntcorpse";
+                    if (col.gameObject.GetComponentInParent<Corpse>().canBeIncinerated)
+                    {
+                        score.AddToScore();
+                    }
                 }
             }
         }

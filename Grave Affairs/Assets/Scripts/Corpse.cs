@@ -8,6 +8,7 @@ public class Corpse : MonoBehaviour
     public Rigidbody dragspot;
     public Material burnt;
     public string actualBodyName;
+    public bool canBeIncinerated, canBeBuried, canBePrepared;
 
     /*void FixedUpdate()
     {
