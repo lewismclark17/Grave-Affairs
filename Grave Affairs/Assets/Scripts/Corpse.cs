@@ -9,6 +9,8 @@ public class Corpse : MonoBehaviour
     public Material burnt;
     public string actualBodyName;
     public bool canBeIncinerated, canBeBuried, canBePrepared;
+    public enum CorpseType {None, King, Noble, Priest};
+    public CorpseType corpseType;
 
     /*void FixedUpdate()
     {

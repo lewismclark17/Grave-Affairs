@@ -112,6 +112,74 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void OnAltInteract()
+    {
+        PrepTable prepTable = GetPrepTable();
+        BoatCoffin boat = GetBoatCoffin();
+
+        if (prepTable != null)
+        {
+            if (prepTable.hasBody && !carriedCorpse)
+            {
+                carriedCorpse = prepTable.GetCleanBody();
+                carriedCorpse.gameObject.SetActive(true);
+                carriedCorpse.dragspot.GetComponent<Rigidbody>().isKinematic = true;
+            }
+            else if (!prepTable.hasBody && carriedCorpse && carriedCorpse.canBePrepared)
+            {
+                prepTable.PlaceBody(carriedCorpse);
+                carriedCorpse.gameObject.SetActive(false);
+                carriedCorpse = null;
+            }
+        }
+
+        if (boat != null)
+        {
+            if (!boat.hasBody && carriedCorpse)
+            {
+                boat.PlaceBody(carriedCorpse);
+                carriedCorpse.gameObject.SetActive(false);
+                carriedCorpse = null;
+            }
+        }
+    }
+
+    PrepTable GetPrepTable()
+    {
+        Collider[] hitcolliders = Physics.OverlapBox(
+            interactor.transform.position, 
+            interactor.transform.localScale / 2, 
+            interactor.transform.rotation);
+        
+        foreach (Collider col in hitcolliders)
+        {
+            PrepTable target = col.gameObject.GetComponentInParent<PrepTable>(); 
+            if (target != null)
+            {
+                return target;
+            }
+        }
+        return null;
+    }
+
+    BoatCoffin GetBoatCoffin()
+    {
+        Collider[] hitcolliders = Physics.OverlapBox(
+            interactor.transform.position, 
+            interactor.transform.localScale / 2, 
+            interactor.transform.rotation);
+        
+        foreach (Collider col in hitcolliders)
+        {
+            BoatCoffin target = col.gameObject.GetComponentInParent<BoatCoffin>(); 
+            if (target != null)
+            {
+                return target;
+            }
+        }
+        return null;
+    }
+
     /*public void onPause()
     {
         if (isPaused == false)

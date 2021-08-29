@@ -16,7 +16,7 @@ public class Score : MonoBehaviour
     public void AddToScore()
     {
         currentScore++;
-        //scoreText.text = "People \"laid to rest\": " +currentScore;
-        scoreText.text = "" +currentScore;
+        scoreText.text = "x " +currentScore;
+        //scoreText.text = "x" +currentScore;
     }
 }
