@@ -15,15 +15,19 @@ public class PlayerController : MonoBehaviour
 
     public static int numberOfPlayers;
 
-    public GameObject interactor, dragspot, throwspot;
+    public GameObject interactor, dragspot, throwspot, itemholdspot;
 
     public GameObject variant1, variant2, variant3, variant4;
+
+    Animator animator;
 
     //public GameObject pauseMenu;
 
     //public bool isPaused;
 
     Corpse carriedCorpse = null;
+
+    Item carriedItem = null;
 
     [SerializeField] TMPro.TextMeshProUGUI instructions;
 
@@ -35,6 +39,7 @@ public class PlayerController : MonoBehaviour
         right = Quaternion.Euler(new Vector3(0, 90, 0)) * forward;
         numberOfPlayers = GameObject.FindGameObjectsWithTag("Player").Length;
         SetVariant(numberOfPlayers);
+        
         //pauseMenu.SetActive(false);
         //isPaused = false;
     }
@@ -44,6 +49,12 @@ public class PlayerController : MonoBehaviour
         if (carriedCorpse)
         {
             carriedCorpse.dragspot.MovePosition(dragspot.transform.position);
+        }
+
+        if (carriedItem)
+        {
+            carriedItem.GetComponent<Rigidbody>().MovePosition(itemholdspot.transform.position);
+            carriedItem.transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, -90);
         }
     }
 
@@ -92,6 +103,24 @@ public class PlayerController : MonoBehaviour
         return null;
     }
 
+    Item GetItem()
+    {
+        Collider[] hitcolliders = Physics.OverlapBox(
+            interactor.transform.position, 
+            interactor.transform.localScale / 2, 
+            interactor.transform.rotation);
+        
+        foreach (Collider col in hitcolliders)
+        {
+            Item target = col.gameObject.GetComponentInParent<Item>(); 
+            if (target != null)
+            {
+                return target;
+            }
+        }
+        return null;
+    }
+
     public void OnInteract()
     {
         if (carriedCorpse == null)
@@ -110,6 +139,37 @@ public class PlayerController : MonoBehaviour
             carriedCorpse.DropCorpse();
             carriedCorpse = null;
         }
+    }
+
+    public void OnItemInteract()
+    {
+        BoatCoffin boat = GetBoatCoffin();
+
+        if (carriedItem == null)
+        {
+            Item item = GetItem();
+            if (item != null)
+            {
+                Debug.Log("ITEM" + item.name);
+                carriedItem = item;
+                carriedItem.GetComponent<Rigidbody>().isKinematic = true;
+            } 
+        }
+        else
+        {  
+            if (boat != null && boat.hasBody && !boat.hasItem)
+            {
+                boat.PlaceItem(carriedItem);
+                carriedItem.gameObject.SetActive(false);
+                carriedItem = null;
+            }
+            else
+            {
+                carriedItem.GetComponent<Rigidbody>().MovePosition(throwspot.transform.position);
+                carriedItem.GetComponent<Rigidbody>().isKinematic = false;
+                carriedItem = null;
+            }
+        }  
     }
 
     public void OnAltInteract()
@@ -207,6 +267,15 @@ public class PlayerController : MonoBehaviour
     public void FixedUpdate() 
     {
         transform.position += heading * speed * Time.fixedDeltaTime;
+        //animator.SetBool("IsMoving", false);
+        if (heading != Vector3.zero)
+        {
+            animator.SetBool("IsMoving", true);
+        }
+        else
+        {
+            animator.SetBool("IsMoving", false);
+        }
     }
 
     void SetVariant(int variant)
@@ -214,21 +283,25 @@ public class PlayerController : MonoBehaviour
         if (variant == 1)
         {
             variant1.SetActive(true);
+            animator = variant1.GetComponent<Animator>();
         }
         else if (variant == 2)
         {
             variant2.SetActive(true);
             gameObject.transform.position += Vector3.back*3;
+            animator = variant2.GetComponent<Animator>();
         }
         else if (variant == 3)
         {
             variant3.SetActive(true);
             gameObject.transform.position += Vector3.back*6;
+            animator = variant3.GetComponent<Animator>();
         }
         else if (variant == 4)
         {
             variant4.SetActive(true);
             gameObject.transform.position += Vector3.back*9;
+            animator = variant4.GetComponent<Animator>();
         }
     }
 }

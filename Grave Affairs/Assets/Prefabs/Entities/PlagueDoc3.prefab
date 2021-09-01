@@ -74,6 +74,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3228598142736268038, guid: ee29e0e418766d2468838bbe42cabffe,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228598142736268038, guid: ee29e0e418766d2468838bbe42cabffe,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.19402836
       objectReference: {fileID: 0}
@@ -101,6 +106,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4465025080786271125, guid: ee29e0e418766d2468838bbe42cabffe,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335314411952901460, guid: ee29e0e418766d2468838bbe42cabffe,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446059630344892495, guid: ee29e0e418766d2468838bbe42cabffe,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6915275177950361313, guid: ee29e0e418766d2468838bbe42cabffe,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee29e0e418766d2468838bbe42cabffe, type: 3}
@@ -211,6 +236,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlagueDoc3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: be3ec4b443ba0084299477e1e07c310e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2239047519091572231, guid: be3ec4b443ba0084299477e1e07c310e,
         type: 3}

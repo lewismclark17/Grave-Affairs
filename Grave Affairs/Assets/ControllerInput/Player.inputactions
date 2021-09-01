@@ -52,6 +52,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "ItemInteract",
+                    "type": "Button",
+                    "id": "58a57378-6850-4d6e-9da0-518571a103ee",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -338,6 +346,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "AltInteract",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fad9bada-2902-4bf0-b059-a89e37b388bd",
+                    "path": "<XInputController>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "ItemInteract",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5d51fe3d-e113-4734-bcd2-728b43c29986",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "ItemInteract",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
