@@ -8,7 +8,7 @@ public class Corpse : MonoBehaviour
     public Rigidbody dragspot;
     public Material burnt;
     public string actualBodyName;
-    public bool canBeIncinerated, canBeBuried, canBePrepared;
+    public bool canBeIncinerated, canBeBuried, canBePrepared, isClean;
     public enum CorpseType {None, King, Noble, Priest};
     public CorpseType corpseType;
 

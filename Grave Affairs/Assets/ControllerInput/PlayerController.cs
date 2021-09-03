@@ -123,6 +123,8 @@ public class PlayerController : MonoBehaviour
 
     public void OnInteract()
     {
+        BoatCoffin boat = GetBoatCoffin(); 
+
         if (carriedCorpse == null)
         {
             Corpse corpse = GetCorpse();
@@ -131,6 +133,12 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("CORPSE" + corpse.name);
                 carriedCorpse = corpse;
                 carriedCorpse.dragspot.GetComponent<Rigidbody>().isKinematic = true;
+                if (carriedItem)
+                {
+                    carriedItem.GetComponent<Rigidbody>().MovePosition(throwspot.transform.position);
+                    carriedItem.GetComponent<Rigidbody>().isKinematic = false;
+                    carriedItem = null;
+                }
             } 
         }
         else
@@ -139,11 +147,6 @@ public class PlayerController : MonoBehaviour
             carriedCorpse.DropCorpse();
             carriedCorpse = null;
         }
-    }
-
-    public void OnItemInteract()
-    {
-        BoatCoffin boat = GetBoatCoffin();
 
         if (carriedItem == null)
         {
@@ -153,11 +156,17 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("ITEM" + item.name);
                 carriedItem = item;
                 carriedItem.GetComponent<Rigidbody>().isKinematic = true;
+                if (carriedCorpse)
+                {
+                    carriedCorpse.dragspot.MovePosition(throwspot.transform.position);
+                    carriedCorpse.DropCorpse();
+                    carriedCorpse = null;
+                }
             } 
         }
         else
         {  
-            if (boat != null && boat.hasBody && !boat.hasItem)
+            if (boat != null && boat.hasBody && !boat.hasItem) 
             {
                 boat.PlaceItem(carriedItem);
                 carriedItem.gameObject.SetActive(false);
@@ -182,10 +191,13 @@ public class PlayerController : MonoBehaviour
             if (prepTable.hasBody && !carriedCorpse)
             {
                 carriedCorpse = prepTable.GetCleanBody();
-                carriedCorpse.gameObject.SetActive(true);
-                carriedCorpse.dragspot.GetComponent<Rigidbody>().isKinematic = true;
+                if (carriedCorpse != null)
+                {
+                    carriedCorpse.gameObject.SetActive(true);
+                    carriedCorpse.dragspot.GetComponent<Rigidbody>().isKinematic = true;
+                }
             }
-            else if (!prepTable.hasBody && carriedCorpse && carriedCorpse.canBePrepared)
+            else if (!prepTable.hasBody && carriedCorpse && carriedCorpse.canBePrepared && !carriedCorpse.isClean)
             {
                 prepTable.PlaceBody(carriedCorpse);
                 carriedCorpse.gameObject.SetActive(false);
@@ -201,6 +213,15 @@ public class PlayerController : MonoBehaviour
                 carriedCorpse.gameObject.SetActive(false);
                 carriedCorpse = null;
             }
+        }
+    }
+
+    public void OnMinigameButton()
+    {
+        PrepTable prepTable = GetPrepTable();
+        if (prepTable && prepTable.hasBody)
+        {
+            prepTable.CleanCorpse();
         }
     }
 

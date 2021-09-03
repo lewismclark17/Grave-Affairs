@@ -54,9 +54,9 @@
                     "interactions": ""
                 },
                 {
-                    "name": "ItemInteract",
+                    "name": "MinigameButton",
                     "type": "Button",
-                    "id": "58a57378-6850-4d6e-9da0-518571a103ee",
+                    "id": "7be4bb7a-a2c0-4731-97ac-8fb059cf426f",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -351,23 +351,23 @@
                 },
                 {
                     "name": "",
-                    "id": "fad9bada-2902-4bf0-b059-a89e37b388bd",
+                    "id": "0de70f3a-7ba2-4546-98f4-62a50c96abce",
                     "path": "<XInputController>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "ItemInteract",
+                    "action": "MinigameButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "5d51fe3d-e113-4734-bcd2-728b43c29986",
-                    "path": "<Keyboard>/r",
+                    "id": "a34e62fc-9778-4f6f-98b6-0bca5f64daaa",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "ItemInteract",
+                    "action": "MinigameButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
