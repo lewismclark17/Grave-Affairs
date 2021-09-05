@@ -12,6 +12,17 @@ public class BoatCoffin : MonoBehaviour
 
     public bool hasBody;
 
+    public bool hasBeenClosed;
+
+    public BoatSpawner boatSpawner;
+
+    Animator animator;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     public void PlaceBody(Corpse corpse)
     {
         hasBody = true;
@@ -35,21 +46,39 @@ public class BoatCoffin : MonoBehaviour
     }
 
     public void PlaceItem(Item item)
-        {
-            hasItem = true;
+    {
+        hasItem = true;
 
-            if (item.itemType == Item.ItemType.RedBook)
-            {
-                redBook.SetActive(true);
-            }
-            else if (item.itemType == Item.ItemType.BlueBook)
-            {
-                blueBook.SetActive(true);
-            }
-            else if (item.itemType == Item.ItemType.GreenBook)
-            {
-                greenBook.SetActive(true);
-            }
+        if (item.itemType == Item.ItemType.RedBook)
+        {
+            redBook.SetActive(true);
         }
-    
+        else if (item.itemType == Item.ItemType.BlueBook)
+        {
+            blueBook.SetActive(true);
+        }
+        else if (item.itemType == Item.ItemType.GreenBook)
+        {
+            greenBook.SetActive(true);
+        }  
+    }
+
+    public void CloseLid()
+    {
+        Leave();
+        boatSpawner.ScorePoints();
+        hasBeenClosed = true;
+    }
+
+    void Leave()
+    { 
+        animator.SetTrigger("LidClosed");
+        Debug.Log("boat should leave now");
+    }
+
+    void RemoveBoat()
+    {
+        boatSpawner.OnBoatDestroyed();
+        Destroy(gameObject);
+    }   
 }

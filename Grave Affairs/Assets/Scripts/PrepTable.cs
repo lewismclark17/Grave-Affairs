@@ -14,6 +14,8 @@ public class PrepTable : MonoBehaviour
     
     public ProgressBar progressBar;
 
+    public BoatSpawner boatSpawner;
+
     public bool hasBody, isPriestBody;
 
     int bodyCleanliness;
@@ -29,6 +31,7 @@ public class PrepTable : MonoBehaviour
         bodyCleanliness = 0;
         bar.SetActive(true);
         progressBar.SetProgress(0);
+        boatSpawner.RequestBoat();
 
         if (corpse.corpseType == Corpse.CorpseType.King)
         {

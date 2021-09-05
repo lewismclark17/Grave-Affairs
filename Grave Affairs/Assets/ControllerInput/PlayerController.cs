@@ -165,19 +165,11 @@ public class PlayerController : MonoBehaviour
             } 
         }
         else
-        {  
-            if (boat != null && boat.hasBody && !boat.hasItem) 
-            {
-                boat.PlaceItem(carriedItem);
-                carriedItem.gameObject.SetActive(false);
-                carriedItem = null;
-            }
-            else
-            {
-                carriedItem.GetComponent<Rigidbody>().MovePosition(throwspot.transform.position);
-                carriedItem.GetComponent<Rigidbody>().isKinematic = false;
-                carriedItem = null;
-            }
+        {      
+            carriedItem.GetComponent<Rigidbody>().MovePosition(throwspot.transform.position);
+            carriedItem.GetComponent<Rigidbody>().isKinematic = false;
+            carriedItem = null;
+
         }  
     }
 
@@ -212,6 +204,16 @@ public class PlayerController : MonoBehaviour
                 boat.PlaceBody(carriedCorpse);
                 carriedCorpse.gameObject.SetActive(false);
                 carriedCorpse = null;
+            }
+            else if (boat.hasBody && !boat.hasItem && carriedItem) 
+            {
+                boat.PlaceItem(carriedItem);
+                carriedItem.gameObject.SetActive(false);
+                carriedItem = null;
+            }
+            else if (boat.hasBody && boat.hasItem && !boat.hasBeenClosed)
+            {
+                boat.CloseLid();
             }
         }
     }

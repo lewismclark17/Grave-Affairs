@@ -19,4 +19,11 @@ public class Score : MonoBehaviour
         scoreText.text = "x " +currentScore;
         //scoreText.text = "x" +currentScore;
     }
+
+    public void AddToScore(int amount)
+    {
+        currentScore += amount;
+        scoreText.text = "x " +currentScore;
+        //scoreText.text = "x" +currentScore;
+    }
 }
