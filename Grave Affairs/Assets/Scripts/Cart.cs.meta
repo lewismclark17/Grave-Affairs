@@ -3,7 +3,14 @@ guid: 86b073d01547e0f40975dd52846d1d95
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - cartCorpses: {instanceID: 0}
+  - priestRef: {fileID: 2706478546340872799, guid: 8fb2751afe0002d4f9f4148ec93a1268,
+      type: 3}
+  - soldierRef: {fileID: 2706478546340872799, guid: 816982a79d109dc408872f3b8fb0374b,
+      type: 3}
+  - plagueRef: {fileID: 2706478546340872799, guid: 5e21116689bbe0148acb99c0b7a4ffce,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
