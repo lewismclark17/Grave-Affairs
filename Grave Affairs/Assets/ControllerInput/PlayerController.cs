@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     
     public float speed = 5.0f;
 
+    public float deadZone = 0.1f;
+
     public static int numberOfPlayers;
 
     public GameObject interactor, dragspot, throwspot, itemholdspot;
@@ -61,9 +63,15 @@ public class PlayerController : MonoBehaviour
     public void OnMove(InputValue input)
     {
         Vector2 inputVec = input.Get<Vector2>();
-        move = inputVec;
+        //move = inputVec;
 
-        moveVec = new Vector3(inputVec.x, 0, inputVec.y);
+        move = new Vector3( 
+            (Mathf.Abs(inputVec.x) > deadZone)?inputVec.x:0.0f,  
+            (Mathf.Abs(inputVec.y) > deadZone)?inputVec.y:0.0f,
+            0) // 360 controller fix
+        ;
+
+        Debug.Log(moveVec);
 
         Vector3 direction = new Vector3(move.x, 0, move.y) * speed * Time.deltaTime;
         Vector3 rightMovement = right * speed * Time.deltaTime * move.x;

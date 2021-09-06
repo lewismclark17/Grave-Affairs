@@ -233,6 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
+  deadZone: 0.05
   interactor: {fileID: 6901399637926822621}
   dragspot: {fileID: 4749728089756208925}
   throwspot: {fileID: 2422058569534233945}
