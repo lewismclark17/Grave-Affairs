@@ -10,7 +10,7 @@
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
   <WwiseInstallationPathMac />
   <WwiseInstallationPathWindows />
-  <WwiseProjectPath>../../../../Audio Projects/In Progress/Grave Affairs CRE312 2021/Wwise Project/Grave Affairs/Grave Affairs.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../../Wwise Project/Grave Affairs/Grave Affairs.wproj</WwiseProjectPath>
   <UseWaapi>true</UseWaapi>
   <WaapiPort>8080</WaapiPort>
   <WaapiIP>127.0.0.1</WaapiIP>

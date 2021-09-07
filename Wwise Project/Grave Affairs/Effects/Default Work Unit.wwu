@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{35F018B2-91BE-4C29-B33D-4B06EB283F27}" SchemaVersion="103">
+	<Effects>
+		<WorkUnit Name="Default Work Unit" ID="{35F018B2-91BE-4C29-B33D-4B06EB283F27}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Crow_EQ" ID="{74792D38-81F0-4A39-B717-C9997EB260E6}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+						<Property Name="GainBand3" Type="Real32" Value="-13"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3821D3F9-D42A-4574-94C0-EB9D240E88DD}" SchemaVersion="97">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{3821D3F9-D42A-4574-94C0-EB9D240E88DD}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Time_Remaining" ID="{CDFB48AA-66B2-481A-908C-B2B0E7CD397F}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

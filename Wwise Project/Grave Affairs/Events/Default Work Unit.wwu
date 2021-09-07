@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2452F348-A4A2-411B-AA66-827839594DA0}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{2452F348-A4A2-411B-AA66-827839594DA0}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Ambience" ID="{B0E618D4-2C05-4488-A4CA-0EDFDEE385D1}" ShortID="215652606">
+					<ChildrenList>
+						<Event Name="Ambience_lvl01" ID="{C4EB4D98-A8FD-45DF-8E64-592AC037FE39}">
+							<ChildrenList>
+								<Action Name="" ID="{854CA90F-444A-4E2A-A732-080272FB6DF6}" ShortID="1009544620">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Level 1 Mix1A" ID="{522C17F9-E2B5-4C5E-8CD4-23B2FA45C462}" WorkUnitID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A094CB11-CF82-4AD3-9189-065C5F60549F}" ShortID="669581139">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wind Loop" ID="{7ABB8D1F-2BCF-4F1F-B5EF-C4044517D20E}" WorkUnitID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C1CFA3F7-3F51-4DA1-982F-209F5D5447C1}" ShortID="996519167">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cicada" ID="{E8A734D1-FE80-43B7-B35C-8C0CE601713D}" WorkUnitID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{57953FFC-3987-401C-9756-C58206DF42B5}" ShortID="845612993">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambience_lvl01" ID="{5038B664-3B12-4F10-BCF1-B759FA201F5A}" WorkUnitID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Actions" ID="{B4D7FC69-1BDF-47F4-AC85-E9405975A57C}" ShortID="339226912">
+					<ChildrenList>
+						<Event Name="Furnace_Burn" ID="{40A16719-E4B7-4B4C-9879-48ACC51B691D}">
+							<ChildrenList>
+								<Action Name="" ID="{C094D893-0E37-4995-B8BB-1D477D3D1C14}" ShortID="488489919">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Burning" ID="{D1161B3E-AA6F-4B19-AEA4-29DD011FC7D8}" WorkUnitID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Physics_Interact" ID="{3E5DEBC8-561E-432B-A883-DED1E17013F2}">
+							<ChildrenList>
+								<Action Name="" ID="{75A34CFF-B760-4E2C-BA2B-A974F0AF9515}" ShortID="174806166">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Physics Interactions" ID="{A02886B3-BB35-4403-AD7D-66A146B05197}" WorkUnitID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Body_Clean" ID="{E5C53568-66F5-4D90-AF5B-98D96B18D1B6}">
+							<ChildrenList>
+								<Action Name="" ID="{1E241B7B-DBD8-4A8D-AB0C-41C046322AE9}" ShortID="739962452">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cleaning" ID="{E1F33D4E-92EE-4D91-9446-077B89399041}" WorkUnitID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Menu" ID="{A5D1A007-C805-4C14-9EC0-AF3B550DF7C2}" ShortID="928333740">
+					<ChildrenList>
+						<Event Name="Menu_Move" ID="{7A00E27F-0830-42E2-8BA3-0578E295A246}">
+							<ChildrenList>
+								<Action Name="" ID="{F0786C30-16DB-479F-8B93-7A896EEBCB26}" ShortID="720296014">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Menu Move" ID="{5D3A31D7-BEFD-4DDF-8541-46F27C605DF7}" WorkUnitID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Menu_Confirm" ID="{5DAAA8B9-9D7D-4773-AF8E-40665D641A94}">
+							<ChildrenList>
+								<Action Name="" ID="{24389F97-5F2F-4AD8-B6E0-13B50A6B7A52}" ShortID="191317594">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Menu Confirm" ID="{6CE14229-D97C-4B35-BF75-380B63246C24}" WorkUnitID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Timer" ID="{9618119C-250B-480C-BC70-87713E9B9675}" ShortID="365652974">
+					<ChildrenList>
+						<Event Name="Final_20" ID="{A62E5C6B-A2A5-474C-85B4-E9FAFDEA91A1}">
+							<ChildrenList>
+								<Action Name="" ID="{8EA48EFC-6BDD-4EDC-944D-3B0B28856CC1}" ShortID="676269947">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Final_20" ID="{9E6FDA8A-CD1E-49B1-B3F2-189EE22CE670}" WorkUnitID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Time_Up" ID="{F66EFB17-4F27-4BA0-9A19-679403F537DA}">
+							<ChildrenList>
+								<Action Name="" ID="{647FEEBF-2F6F-4917-AAED-0D312CA42243}" ShortID="852289">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Time Up" ID="{4FB0795F-41D2-4071-B67C-6CFF0E02E5C9}" WorkUnitID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Vehicles" ID="{7893C71F-EA2F-4EAF-997D-3FFCBD7CE266}" ShortID="226603830">
+					<ChildrenList>
+						<Event Name="Boat" ID="{E4FF3853-10BA-429D-BD33-A18E6383B5F9}">
+							<ChildrenList>
+								<Action Name="" ID="{485F9F5B-E2FA-4DA7-949D-E0F4B1FE0654}" ShortID="925238620">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Boat" ID="{236176AE-DF40-4ABA-9261-0744BCED5818}" WorkUnitID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Cart" ID="{9736380C-E734-4B5A-8F56-29B9DE0C7A59}">
+							<ChildrenList>
+								<Action Name="" ID="{9941F1B9-6A96-40DC-AFB2-EEDD957EF127}" ShortID="946030042">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cart" ID="{B2FF121B-0B3D-4696-9C15-D9E406D54DEA}" WorkUnitID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

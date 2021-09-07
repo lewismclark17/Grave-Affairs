@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2452F348-A4A2-411B-AA66-827839594DA0}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{2452F348-A4A2-411B-AA66-827839594DA0}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Ambience_lvl01" ID="{C4EB4D98-A8FD-45DF-8E64-592AC037FE39}">
+					<ChildrenList>
+						<Action Name="" ID="{854CA90F-444A-4E2A-A732-080272FB6DF6}" ShortID="1009544620">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Placeholder SFX" ID="{522C17F9-E2B5-4C5E-8CD4-23B2FA45C462}" WorkUnitID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A094CB11-CF82-4AD3-9189-065C5F60549F}" ShortID="669581139">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wind Loop" ID="{7ABB8D1F-2BCF-4F1F-B5EF-C4044517D20E}" WorkUnitID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C1CFA3F7-3F51-4DA1-982F-209F5D5447C1}" ShortID="996519167">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cicada" ID="{E8A734D1-FE80-43B7-B35C-8C0CE601713D}" WorkUnitID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{57953FFC-3987-401C-9756-C58206DF42B5}" ShortID="845612993">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience_lvl01" ID="{5038B664-3B12-4F10-BCF1-B759FA201F5A}" WorkUnitID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

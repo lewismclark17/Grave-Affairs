@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="488530427">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1829204522" Language="SFX" Hash="4142954014">
+			<ObjectPath>\SoundBanks\Default Work Unit\GA_TEST2</ObjectPath>
+			<ShortName>GA_TEST2</ShortName>
+			<Path>GA_TEST2.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1266554271" Name="Ambience_lvl01" ObjectPath="\Events\Default Work Unit\Ambience\Ambience_lvl01" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="13832725" Language="SFX">
+							<ShortName>Crow_01.wav</ShortName>
+							<Path>SFX\Crow_01_10C4C929.wem</Path>
+						</File>
+						<File Id="210454462" Language="SFX">
+							<ShortName>windy_02.wav</ShortName>
+							<Path>SFX\windy_02_D79FB2B7.wem</Path>
+						</File>
+						<File Id="366573958" Language="SFX">
+							<ShortName>Wolf01.wav</ShortName>
+							<Path>SFX\Wolf01_10C4C929.wem</Path>
+						</File>
+						<File Id="563048294" Language="SFX">
+							<ShortName>crickets 2.wav</ShortName>
+							<Path>SFX\crickets 2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="674024429" Language="SFX">
+							<ShortName>Crow_02.wav</ShortName>
+							<Path>SFX\Crow_02_10C4C929.wem</Path>
+						</File>
+						<File Id="960208460" Language="SFX">
+							<ShortName>First LVL Test.wav</ShortName>
+							<Path>SFX\First LVL Test_D79FB2B7.wem</Path>
+						</File>
+						<File Id="982497273" Language="SFX">
+							<ShortName>OWl 2.wav</ShortName>
+							<Path>SFX\OWl 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1795056175" Name="Boat" ObjectPath="\Events\Default Work Unit\Vehicles\Boat" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="961605485" Language="SFX">
+							<ShortName>Stream.wav</ShortName>
+							<Path>SFX\Stream_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3301051131" Name="Body_Clean" ObjectPath="\Events\Default Work Unit\Actions\Body_Clean" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="537684091" Language="SFX">
+							<ShortName>Cleaning.wav</ShortName>
+							<Path>SFX\Cleaning_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4189504243" Name="Cart" ObjectPath="\Events\Default Work Unit\Vehicles\Cart" DurationType="OneShot" DurationMin="12.209977" DurationMax="12.209977">
+					<IncludedMemoryFiles>
+						<File Id="211434259" Language="SFX">
+							<ShortName>Cart_01.wav</ShortName>
+							<Path>SFX\Cart_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2339349540" Name="Final_20" ObjectPath="\Events\Default Work Unit\Timer\Final_20" DurationType="OneShot" DurationMin="22.409416" DurationMax="22.409416">
+					<IncludedMemoryFiles>
+						<File Id="715121079" Language="SFX">
+							<ShortName>Final 20s.wav</ShortName>
+							<Path>SFX\Final 20s_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2149484929" Name="Furnace_Burn" ObjectPath="\Events\Default Work Unit\Actions\Furnace_Burn" DurationType="OneShot" DurationMin="2.062810" DurationMax="2.927382">
+					<IncludedMemoryFiles>
+						<File Id="855043693" Language="SFX">
+							<ShortName>Body_Burn_01.wav</ShortName>
+							<Path>SFX\Body_Burn_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4046753069" Name="Menu_Confirm" ObjectPath="\Events\Default Work Unit\Menu\Menu_Confirm" DurationType="OneShot" DurationMin="0.786551" DurationMax="0.786551">
+					<IncludedMemoryFiles>
+						<File Id="870560162" Language="SFX">
+							<ShortName>Menu Confirm.wav</ShortName>
+							<Path>SFX\Menu Confirm_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1927068452" Name="Menu_Move" ObjectPath="\Events\Default Work Unit\Menu\Menu_Move" DurationType="OneShot" DurationMin="0.586386" DurationMax="0.698543">
+					<IncludedMemoryFiles>
+						<File Id="925350328" Language="SFX">
+							<ShortName>Menu Sound.wav</ShortName>
+							<Path>SFX\Menu Sound_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3767330593" Name="Physics_Interact" ObjectPath="\Events\Default Work Unit\Actions\Physics_Interact" DurationType="OneShot" DurationMin="0.799635" DurationMax="1.453886">
+					<IncludedMemoryFiles>
+						<File Id="484696462" Language="SFX">
+							<ShortName>Body_Impact_01.wav</ShortName>
+							<Path>SFX\Body_Impact_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4051042642" Name="Time_Up" ObjectPath="\Events\Default Work Unit\Timer\Time_Up" DurationType="OneShot" DurationMin="5.318310" DurationMax="5.318310">
+					<IncludedMemoryFiles>
+						<File Id="764368245" Language="SFX">
+							<ShortName>Big_Chime_01.wav</ShortName>
+							<Path>SFX\Big_Chime_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="13832725" Language="SFX">
+					<ShortName>Crow_01.wav</ShortName>
+					<Path>SFX\Crow_01_10C4C929.wem</Path>
+				</File>
+				<File Id="210454462" Language="SFX">
+					<ShortName>windy_02.wav</ShortName>
+					<Path>SFX\windy_02_D79FB2B7.wem</Path>
+				</File>
+				<File Id="211434259" Language="SFX">
+					<ShortName>Cart_01.wav</ShortName>
+					<Path>SFX\Cart_01_10C4C929.wem</Path>
+				</File>
+				<File Id="366573958" Language="SFX">
+					<ShortName>Wolf01.wav</ShortName>
+					<Path>SFX\Wolf01_10C4C929.wem</Path>
+				</File>
+				<File Id="484696462" Language="SFX">
+					<ShortName>Body_Impact_01.wav</ShortName>
+					<Path>SFX\Body_Impact_01_10C4C929.wem</Path>
+				</File>
+				<File Id="537684091" Language="SFX">
+					<ShortName>Cleaning.wav</ShortName>
+					<Path>SFX\Cleaning_D79FB2B7.wem</Path>
+				</File>
+				<File Id="563048294" Language="SFX">
+					<ShortName>crickets 2.wav</ShortName>
+					<Path>SFX\crickets 2_D79FB2B7.wem</Path>
+				</File>
+				<File Id="674024429" Language="SFX">
+					<ShortName>Crow_02.wav</ShortName>
+					<Path>SFX\Crow_02_10C4C929.wem</Path>
+				</File>
+				<File Id="715121079" Language="SFX">
+					<ShortName>Final 20s.wav</ShortName>
+					<Path>SFX\Final 20s_10C4C929.wem</Path>
+				</File>
+				<File Id="764368245" Language="SFX">
+					<ShortName>Big_Chime_01.wav</ShortName>
+					<Path>SFX\Big_Chime_01_10C4C929.wem</Path>
+				</File>
+				<File Id="855043693" Language="SFX">
+					<ShortName>Body_Burn_01.wav</ShortName>
+					<Path>SFX\Body_Burn_01_10C4C929.wem</Path>
+				</File>
+				<File Id="870560162" Language="SFX">
+					<ShortName>Menu Confirm.wav</ShortName>
+					<Path>SFX\Menu Confirm_10C4C929.wem</Path>
+				</File>
+				<File Id="925350328" Language="SFX">
+					<ShortName>Menu Sound.wav</ShortName>
+					<Path>SFX\Menu Sound_10C4C929.wem</Path>
+				</File>
+				<File Id="960208460" Language="SFX">
+					<ShortName>First LVL Test.wav</ShortName>
+					<Path>SFX\First LVL Test_D79FB2B7.wem</Path>
+				</File>
+				<File Id="961605485" Language="SFX">
+					<ShortName>Stream.wav</ShortName>
+					<Path>SFX\Stream_D79FB2B7.wem</Path>
+				</File>
+				<File Id="982497273" Language="SFX">
+					<ShortName>OWl 2.wav</ShortName>
+					<Path>SFX\OWl 2_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="2087744648" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\GA_TEST</ObjectPath>
+			<ShortName>GA_TEST</ShortName>
+			<Path>GA_TEST.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1266554271" Name="Ambience_lvl01" ObjectPath="\Events\Default Work Unit\Ambience\Ambience_lvl01" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="13832725" Language="SFX">
+							<ShortName>Crow_01.wav</ShortName>
+							<Path>SFX\Crow_01_10C4C929.wem</Path>
+						</File>
+						<File Id="210454462" Language="SFX">
+							<ShortName>windy_02.wav</ShortName>
+							<Path>SFX\windy_02_D79FB2B7.wem</Path>
+						</File>
+						<File Id="366573958" Language="SFX">
+							<ShortName>Wolf01.wav</ShortName>
+							<Path>SFX\Wolf01_10C4C929.wem</Path>
+						</File>
+						<File Id="563048294" Language="SFX">
+							<ShortName>crickets 2.wav</ShortName>
+							<Path>SFX\crickets 2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="674024429" Language="SFX">
+							<ShortName>Crow_02.wav</ShortName>
+							<Path>SFX\Crow_02_10C4C929.wem</Path>
+						</File>
+						<File Id="960208460" Language="SFX">
+							<ShortName>First LVL Test.wav</ShortName>
+							<Path>SFX\First LVL Test_D79FB2B7.wem</Path>
+						</File>
+						<File Id="982497273" Language="SFX">
+							<ShortName>OWl 2.wav</ShortName>
+							<Path>SFX\OWl 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1795056175" Name="Boat" ObjectPath="\Events\Default Work Unit\Vehicles\Boat" DurationType="Infinite"/>
+				<Event Id="3301051131" Name="Body_Clean" ObjectPath="\Events\Default Work Unit\Actions\Body_Clean" DurationType="Infinite"/>
+				<Event Id="4189504243" Name="Cart" ObjectPath="\Events\Default Work Unit\Vehicles\Cart" DurationType="OneShot" DurationMin="12.209977" DurationMax="12.209977"/>
+				<Event Id="2339349540" Name="Final_20" ObjectPath="\Events\Default Work Unit\Timer\Final_20" DurationType="OneShot" DurationMin="22.409416" DurationMax="22.409416"/>
+				<Event Id="2149484929" Name="Furnace_Burn" ObjectPath="\Events\Default Work Unit\Actions\Furnace_Burn" DurationType="OneShot" DurationMin="2.062810" DurationMax="2.927382"/>
+				<Event Id="4046753069" Name="Menu_Confirm" ObjectPath="\Events\Default Work Unit\Menu\Menu_Confirm" DurationType="OneShot" DurationMin="0.786551" DurationMax="0.786551"/>
+				<Event Id="1927068452" Name="Menu_Move" ObjectPath="\Events\Default Work Unit\Menu\Menu_Move" DurationType="OneShot" DurationMin="0.586386" DurationMax="0.698543"/>
+				<Event Id="3767330593" Name="Physics_Interact" ObjectPath="\Events\Default Work Unit\Actions\Physics_Interact" DurationType="OneShot" DurationMin="0.799635" DurationMax="1.453886"/>
+				<Event Id="4051042642" Name="Time_Up" ObjectPath="\Events\Default Work Unit\Timer\Time_Up" DurationType="OneShot" DurationMin="5.318310" DurationMax="5.318310"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="13832725" Language="SFX">
+					<ShortName>Crow_01.wav</ShortName>
+					<Path>SFX\Crow_01_10C4C929.wem</Path>
+				</File>
+				<File Id="210454462" Language="SFX">
+					<ShortName>windy_02.wav</ShortName>
+					<Path>SFX\windy_02_D79FB2B7.wem</Path>
+				</File>
+				<File Id="211434259" Language="SFX">
+					<ShortName>Cart_01.wav</ShortName>
+					<Path>SFX\Cart_01_10C4C929.wem</Path>
+				</File>
+				<File Id="366573958" Language="SFX">
+					<ShortName>Wolf01.wav</ShortName>
+					<Path>SFX\Wolf01_10C4C929.wem</Path>
+				</File>
+				<File Id="484696462" Language="SFX">
+					<ShortName>Body_Impact_01.wav</ShortName>
+					<Path>SFX\Body_Impact_01_10C4C929.wem</Path>
+				</File>
+				<File Id="537684091" Language="SFX">
+					<ShortName>Cleaning.wav</ShortName>
+					<Path>SFX\Cleaning_D79FB2B7.wem</Path>
+				</File>
+				<File Id="563048294" Language="SFX">
+					<ShortName>crickets 2.wav</ShortName>
+					<Path>SFX\crickets 2_D79FB2B7.wem</Path>
+				</File>
+				<File Id="674024429" Language="SFX">
+					<ShortName>Crow_02.wav</ShortName>
+					<Path>SFX\Crow_02_10C4C929.wem</Path>
+				</File>
+				<File Id="715121079" Language="SFX">
+					<ShortName>Final 20s.wav</ShortName>
+					<Path>SFX\Final 20s_10C4C929.wem</Path>
+				</File>
+				<File Id="764368245" Language="SFX">
+					<ShortName>Big_Chime_01.wav</ShortName>
+					<Path>SFX\Big_Chime_01_10C4C929.wem</Path>
+				</File>
+				<File Id="855043693" Language="SFX">
+					<ShortName>Body_Burn_01.wav</ShortName>
+					<Path>SFX\Body_Burn_01_10C4C929.wem</Path>
+				</File>
+				<File Id="870560162" Language="SFX">
+					<ShortName>Menu Confirm.wav</ShortName>
+					<Path>SFX\Menu Confirm_10C4C929.wem</Path>
+				</File>
+				<File Id="925350328" Language="SFX">
+					<ShortName>Menu Sound.wav</ShortName>
+					<Path>SFX\Menu Sound_10C4C929.wem</Path>
+				</File>
+				<File Id="960208460" Language="SFX">
+					<ShortName>First LVL Test.wav</ShortName>
+					<Path>SFX\First LVL Test_D79FB2B7.wem</Path>
+				</File>
+				<File Id="961605485" Language="SFX">
+					<ShortName>Stream.wav</ShortName>
+					<Path>SFX\Stream_D79FB2B7.wem</Path>
+				</File>
+				<File Id="982497273" Language="SFX">
+					<ShortName>OWl 2.wav</ShortName>
+					<Path>SFX\OWl 2_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

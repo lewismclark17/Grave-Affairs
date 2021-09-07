@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AD065DA8-1797-4A1D-B279-14567B66D0DC}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{AD065DA8-1797-4A1D-B279-14567B66D0DC}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="GA_TEST" ID="{E2EF64B4-2FA4-4D53-8A88-1AD80F5237FC}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Ambience_lvl01" ID="{C4EB4D98-A8FD-45DF-8E64-592AC037FE39}" WorkUnitID="{2452F348-A4A2-411B-AA66-827839594DA0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Master-Mixer Hierarchy" ID="{2388DAEA-9775-46C6-A2ED-C5222A397756}" WorkUnitID="{2388DAEA-9775-46C6-A2ED-C5222A397756}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Actor-Mixer Hierarchy" ID="{5EA7BBF8-64C0-4A50-8821-A07E8BE21D68}" WorkUnitID="{5EA7BBF8-64C0-4A50-8821-A07E8BE21D68}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="GA_TEST2" ID="{AB69E746-38E0-4058-9BF5-C3A5A65D644D}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Default Work Unit" ID="{2452F348-A4A2-411B-AA66-827839594DA0}" WorkUnitID="{2452F348-A4A2-411B-AA66-827839594DA0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}" WorkUnitID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

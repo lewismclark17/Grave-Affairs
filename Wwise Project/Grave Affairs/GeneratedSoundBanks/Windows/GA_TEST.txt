@@ -1,0 +1,37 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1266554271	Ambience_lvl01			\Default Work Unit\Ambience\Ambience_lvl01	
+	1795056175	Boat			\Default Work Unit\Vehicles\Boat	
+	1927068452	Menu_Move			\Default Work Unit\Menu\Menu_Move	
+	2149484929	Furnace_Burn			\Default Work Unit\Actions\Furnace_Burn	
+	2339349540	Final_20			\Default Work Unit\Timer\Final_20	
+	3301051131	Body_Clean			\Default Work Unit\Actions\Body_Clean	
+	3767330593	Physics_Interact			\Default Work Unit\Actions\Physics_Interact	
+	4046753069	Menu_Confirm			\Default Work Unit\Menu\Menu_Confirm	
+	4051042642	Time_Up			\Default Work Unit\Timer\Time_Up	
+	4189504243	Cart			\Default Work Unit\Vehicles\Cart	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1820854077	Noise_Gate_Fast_Attack	Wwise Expander			
+	1976340857	Crow_EQ	Wwise Parametric EQ			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	13832725	Crow_01	C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\.cache\Windows\SFX\Crow_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Level 1\Ambience_lvl01\Crow_01		477236
+	210454462	Wind Loop	C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\.cache\Windows\SFX\windy_02_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Level 1\Wind Loop		851660
+	211434259	Cart	C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\.cache\Windows\SFX\Cart_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment Sounds\Cart		2153904
+	366573958	Wolf_01	C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\.cache\Windows\SFX\Wolf01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Level 1\Ambience_lvl01\Wolf_01		1001736
+	484696462	Physics Interactions	C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\.cache\Windows\SFX\Body_Impact_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Body Sounds\Physics Interactions		130840
+	537684091	Cleaning	C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\.cache\Windows\SFX\Cleaning_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Body Sounds\Cleaning		131948
+	563048294	Cicada	C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\.cache\Windows\SFX\crickets 2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Level 1\Cicada		430324
+	674024429	Crow_02	C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\.cache\Windows\SFX\Crow_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Level 1\Ambience_lvl01\Crow_02		734444
+	715121079	Final_20	C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\.cache\Windows\SFX\Final 20s_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI Sounds\Timer FX\Final_20		3625000
+	764368245	Time Up	C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\.cache\Windows\SFX\Big_Chime_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI Sounds\Timer FX\Time Up		845572
+	855043693	Burning	C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\.cache\Windows\SFX\Body_Burn_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Body Sounds\Burning		439848
+	870560162	Menu Confirm	C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\.cache\Windows\SFX\Menu Confirm_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI Sounds\Menu\Menu Confirm		136428
+	925350328	Menu Move	C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\.cache\Windows\SFX\Menu Sound_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI Sounds\Menu\Menu Move		86644
+	960208460	Level 1 Mix1A	C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\.cache\Windows\SFX\First LVL Test_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Level 1 Mix1A		5844488
+	961605485	Boat	C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\.cache\Windows\SFX\Stream_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment Sounds\Boat		1688092
+	982497273	Owl_01	C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\.cache\Windows\SFX\OWl 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Level 1\Ambience_lvl01\Owl_01		158220
+
