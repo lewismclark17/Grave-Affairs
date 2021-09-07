@@ -67,5 +67,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlagueDoc1
       objectReference: {fileID: 0}
+    - target: {fileID: 6701347428832219224, guid: ee29e0e418766d2468838bbe42cabffe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9184545960118565029, guid: ee29e0e418766d2468838bbe42cabffe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4075c85b2c3f0c548a74daf737dc9eeb, type: 2}
+    - target: {fileID: 9184545960118565029, guid: ee29e0e418766d2468838bbe42cabffe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4075c85b2c3f0c548a74daf737dc9eeb, type: 2}
+    - target: {fileID: 9184545960118565029, guid: ee29e0e418766d2468838bbe42cabffe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4075c85b2c3f0c548a74daf737dc9eeb, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee29e0e418766d2468838bbe42cabffe, type: 3}
