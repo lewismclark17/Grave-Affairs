@@ -71,8 +71,6 @@ public class PlayerController : MonoBehaviour
             0) // 360 controller fix
         ;
 
-        Debug.Log(moveVec);
-
         Vector3 direction = new Vector3(move.x, 0, move.y) * speed * Time.deltaTime;
         Vector3 rightMovement = right * speed * Time.deltaTime * move.x;
         Vector3 upMovement = forward * speed * Time.deltaTime * move.y;
@@ -185,6 +183,7 @@ public class PlayerController : MonoBehaviour
     {
         PrepTable prepTable = GetPrepTable();
         BoatCoffin boat = GetBoatCoffin();
+        BookPile bookPile = GetBookPile();
 
         if (prepTable != null)
         {
@@ -205,12 +204,22 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        if (bookPile != null)
+        {
+            if (!carriedCorpse && !carriedItem)
+            {
+                carriedItem = bookPile.GetBook();
+
+            }
+        }
+
         if (boat != null)
         {
             if (!boat.hasBody && carriedCorpse)
             {
                 boat.PlaceBody(carriedCorpse);
                 carriedCorpse.gameObject.SetActive(false);
+                carriedCorpse.SummonCorpseCartIfNeeded();
                 carriedCorpse = null;
             }
             else if (boat.hasBody && !boat.hasItem && carriedItem) 
@@ -233,6 +242,24 @@ public class PlayerController : MonoBehaviour
         {
             prepTable.CleanCorpse();
         }
+    }
+
+    BookPile GetBookPile()
+    {
+        Collider[] hitcolliders = Physics.OverlapBox(
+            interactor.transform.position, 
+            interactor.transform.localScale / 2, 
+            interactor.transform.rotation);
+        
+        foreach (Collider col in hitcolliders)
+        {
+            BookPile target = col.gameObject.GetComponentInParent<BookPile>(); 
+            if (target != null)
+            {
+                return target;
+            }
+        }
+        return null;
     }
 
     PrepTable GetPrepTable()

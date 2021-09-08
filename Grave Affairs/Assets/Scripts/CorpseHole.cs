@@ -8,10 +8,16 @@ public class CorpseHole : MonoBehaviour
 
     void OnTriggerEnter (Collider col)
     {
-        if(col.gameObject.tag == "corpse" && col.gameObject.GetComponentInParent<Corpse>().canBeBuried)
+        if (col.gameObject.tag == "corpse")
         {
-            score.AddToScore();
-            col.gameObject.tag ="corpseinhole";
+            Corpse corpse = col.gameObject.GetComponentInParent<Corpse>();
+            corpse.isDealtWith = true;
+            corpse.SummonCorpseCartIfNeeded();
+            if(corpse.canBeBuried)
+            {
+                score.AddToScore();
+                col.gameObject.tag ="corpseinhole";
+            }
         }
     }
 }

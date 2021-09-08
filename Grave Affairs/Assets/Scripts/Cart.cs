@@ -15,10 +15,20 @@ public class Cart : MonoBehaviour
     
     public int rowSize, colSize;
 
+    Animator animator;
+
+    Vector3 CartCorpsesOriginalPosition;
+
+    Quaternion CartCorpsesOriginalRotation;
+
     void Start()
     {
+        CartCorpsesOriginalPosition = cartCorpses.transform.position;
+        CartCorpsesOriginalRotation = cartCorpses.transform.rotation;
         StartCoroutine(CorpseMagic());
-        GenerateCorpses(6, 8, 10, 12, 1, 3);
+        GenerateCorpses(2, 3, 3, 5, 1, 2);
+        Corpse.corpseCart = this;
+        animator = GetComponentInParent<Animator>();
     }
 
     IEnumerator CorpseMagic()
@@ -51,5 +61,17 @@ public class Cart : MonoBehaviour
         {
             corpses[i].transform.localPosition = new Vector3(i%rowSize*rowSpacing, i/(rowSize*colSize)*verSpacing, i/rowSize%colSize*colSpacing);
         }
+    }
+
+    public void ActivateNextWave()
+    {
+        //Debug.Log("activatenextwave called");
+        animator.SetTrigger("NeedMoreCorpses");
+        cartCorpses.transform.DetachChildren();
+        cartCorpses.transform.position = CartCorpsesOriginalPosition;
+        cartCorpses.transform.rotation = CartCorpsesOriginalRotation;
+        cartCorpses.transform.parent = transform;
+        GenerateCorpses(2, 3, 3, 5, 1, 2);
+        StartCoroutine(CorpseMagic());
     }
 }
