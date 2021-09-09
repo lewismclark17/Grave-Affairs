@@ -16,16 +16,23 @@ public class BoatCoffin : MonoBehaviour
 
     public BoatSpawner boatSpawner;
 
+    public GameObject speechBubble, priestPic, redBookPic;
+
     Animator animator;
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        speechBubble.SetActive(false);
+        priestPic.SetActive(false);
+        redBookPic.SetActive(false);
     }
 
     public void PlaceBody(Corpse corpse)
     {
         hasBody = true;
+        priestPic.SetActive(false);
+        redBookPic.SetActive(true);
 
         if (corpse.corpseType == Corpse.CorpseType.King)
         {
@@ -48,6 +55,9 @@ public class BoatCoffin : MonoBehaviour
     public void PlaceItem(Item item)
     {
         hasItem = true;
+        speechBubble.SetActive(false);
+        priestPic.SetActive(false);
+        redBookPic.SetActive(false);
 
         if (item.itemType == Item.ItemType.RedBook)
         {
@@ -80,5 +90,11 @@ public class BoatCoffin : MonoBehaviour
     {
         boatSpawner.OnBoatDestroyed();
         Destroy(gameObject);
-    }   
+    } 
+
+    public void EnableUI()
+    {
+        speechBubble.SetActive(true);
+        priestPic.SetActive(true);
+    }  
 }
