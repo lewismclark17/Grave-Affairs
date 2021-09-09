@@ -10,11 +10,13 @@ public class PrepTable : MonoBehaviour
 
     public GameObject cleanPriest, cleanNoble, cleanKing;
 
-    public GameObject bar;
+    public GameObject bar, placePrompt;
     
     public ProgressBar progressBar;
 
     public BoatSpawner boatSpawner;
+
+    FlashingPrompt flashingPrompt;
 
     public bool hasBody, isPriestBody;
 
@@ -23,6 +25,7 @@ public class PrepTable : MonoBehaviour
     public void Start()
     {
         bar.SetActive(false);
+        flashingPrompt = GetComponent<FlashingPrompt>();
     }
 
     public void PlaceBody(Corpse corpse)
@@ -32,6 +35,7 @@ public class PrepTable : MonoBehaviour
         bar.SetActive(true);
         progressBar.SetProgress(0);
         boatSpawner.RequestBoat();
+        flashingPrompt.StartFlash();
 
         if (corpse.corpseType == Corpse.CorpseType.King)
         {
@@ -88,6 +92,7 @@ public class PrepTable : MonoBehaviour
         else
         {
             bar.SetActive(false);
+            flashingPrompt.StopFlash();
             if (priestBody.activeSelf)
             {
                 priestBody.SetActive(false);
@@ -105,5 +110,17 @@ public class PrepTable : MonoBehaviour
             }
         }
     }
-    
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Player" && other.gameObject.GetComponentInParent<PlayerController>().HasDirtyCorpse())
+        {
+            placePrompt.SetActive(true);
+        }
+    }
+
+    void FixedUpdate()
+    {
+        placePrompt.SetActive(false);
+    }
 }

@@ -30,10 +30,10 @@ public class StartScreen : MonoBehaviour
         Time.timeScale = 0f;
         instructions.enabled = false;
         tutorialScreen.SetActive(true);
-        yield return StartCoroutine(WaitForRealSeconds(5f));
+        yield return StartCoroutine(WaitForRealSeconds(1f));
         tutorialScreen.SetActive(false);
         joinText.SetActive(true);
-        yield return StartCoroutine(WaitForRealSeconds(5f));
+        yield return StartCoroutine(WaitForRealSeconds(2f));
         playerManager.SetActive(false);
         if (PlayerController.numberOfPlayers > 0)
         {

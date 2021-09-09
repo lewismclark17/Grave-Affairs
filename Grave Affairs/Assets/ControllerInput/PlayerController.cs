@@ -363,4 +363,9 @@ public class PlayerController : MonoBehaviour
             animator = variant4.GetComponent<Animator>();
         }
     }
+
+    public bool HasDirtyCorpse()
+    {
+        return carriedCorpse != null && carriedCorpse.canBePrepared && !carriedCorpse.isClean;
+    }
 }
