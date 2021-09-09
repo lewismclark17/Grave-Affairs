@@ -209,6 +209,7 @@ public class PlayerController : MonoBehaviour
             if (!carriedCorpse && !carriedItem)
             {
                 carriedItem = bookPile.GetBook();
+                carriedItem.GetComponent<Rigidbody>().isKinematic = true;
 
             }
         }
