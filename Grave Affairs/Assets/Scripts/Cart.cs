@@ -25,16 +25,15 @@ public class Cart : MonoBehaviour
     {
         CartCorpsesOriginalPosition = cartCorpses.transform.position;
         CartCorpsesOriginalRotation = cartCorpses.transform.rotation;
-        StartCoroutine(CorpseMagic());
         GenerateCorpses(2, 3, 3, 5, 1, 2);
         Corpse.corpseCart = this;
         animator = GetComponentInParent<Animator>();
     }
 
-    IEnumerator CorpseMagic()
+    public void CorpseMagic()
     {
-        yield return new WaitForSeconds(sec);
         cartCorpses.transform.parent = null;
+        Debug.Log("corpse magic TADA");
     }
 
     void GenerateCorpses(int minNumSoldiers, int maxNumSoldiers, int minNumPlagued, int maxNumPlagued, int minNumPriests, int maxNumPriests)
@@ -72,6 +71,5 @@ public class Cart : MonoBehaviour
         cartCorpses.transform.rotation = CartCorpsesOriginalRotation;
         cartCorpses.transform.parent = transform;
         GenerateCorpses(2, 3, 3, 5, 1, 2);
-        StartCoroutine(CorpseMagic());
     }
 }
