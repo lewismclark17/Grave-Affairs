@@ -59,22 +59,22 @@ public class StartScreen : MonoBehaviour
     {
         if (PlayerController.numberOfPlayers == 1)
         {
-            bodyRequirement = 10;
+            bodyRequirement = 20;
             instructions.text = "Deposit " + bodyRequirement +  " bodies in the mass grave before time runs out!";
         }
         else if (PlayerController.numberOfPlayers == 2)
         {
-            bodyRequirement = 15;
+            bodyRequirement = 35;
             instructions.text = "Deposit " + bodyRequirement +  " bodies in the mass grave before time runs out!";
         }
         else if (PlayerController.numberOfPlayers == 3)
         {
-            bodyRequirement = 20;
+            bodyRequirement = 50;
             instructions.text = "Deposit " + bodyRequirement +  " bodies in the mass grave before time runs out!"; 
         }
         else if (PlayerController.numberOfPlayers == 4)
         {
-            bodyRequirement = 25;
+            bodyRequirement = 70;
             instructions.text = "Deposit " + bodyRequirement +  " bodies in the mass grave before time runs out!";
         }
     }

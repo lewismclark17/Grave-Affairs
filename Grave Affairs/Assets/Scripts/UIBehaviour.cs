@@ -41,19 +41,19 @@ public class UIBehaviour : MonoBehaviour
                 score.enabled = true;
                 exitButton.SetActive(true);
             }
-            else if (Score.currentScore > 29 && PlayerController.numberOfPlayers == 2)
+            else if (Score.currentScore > 34 && PlayerController.numberOfPlayers == 2)
             {
                 winScreen.SetActive(true);
                 score.enabled = true;
                 exitButton.SetActive(true);
             }
-            else if (Score.currentScore > 39 && PlayerController.numberOfPlayers == 3)
+            else if (Score.currentScore > 49 && PlayerController.numberOfPlayers == 3)
             {
                 winScreen.SetActive(true);
                 score.enabled = true;
                 exitButton.SetActive(true);
             }
-            else if (Score.currentScore > 49 && PlayerController.numberOfPlayers == 4)
+            else if (Score.currentScore > 69 && PlayerController.numberOfPlayers == 4)
             {
                 winScreen.SetActive(true);
                 score.enabled = true;

@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
         forward.y = 0;
         forward = Vector3.Normalize(forward);
         right = Quaternion.Euler(new Vector3(0, 90, 0)) * forward;
-        numberOfPlayers = GameObject.FindGameObjectsWithTag("Player").Length;
+        numberOfPlayers = GameObject.FindObjectsOfType<PlayerController>().Length;
         SetVariant(numberOfPlayers);
         
         //pauseMenu.SetActive(false);
