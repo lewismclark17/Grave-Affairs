@@ -16,7 +16,7 @@ public class BoatCoffin : MonoBehaviour
 
     public BoatSpawner boatSpawner;
 
-    public GameObject speechBubble, priestPic, redBookPic;
+    public GameObject speechBubble, priestPic, redBookPic, buttonPrompt;
 
     Animator animator;
 
@@ -26,6 +26,7 @@ public class BoatCoffin : MonoBehaviour
         speechBubble.SetActive(false);
         priestPic.SetActive(false);
         redBookPic.SetActive(false);
+        buttonPrompt.SetActive(false);
     }
 
     public void PlaceBody(Corpse corpse)
@@ -58,6 +59,7 @@ public class BoatCoffin : MonoBehaviour
         speechBubble.SetActive(false);
         priestPic.SetActive(false);
         redBookPic.SetActive(false);
+        buttonPrompt.SetActive(true);
 
         if (item.itemType == Item.ItemType.RedBook)
         {
@@ -78,6 +80,7 @@ public class BoatCoffin : MonoBehaviour
         Leave();
         boatSpawner.ScorePoints();
         hasBeenClosed = true;
+        buttonPrompt.SetActive(false);
     }
 
     void Leave()
