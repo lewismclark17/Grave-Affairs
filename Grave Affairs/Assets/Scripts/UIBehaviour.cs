@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class UIBehaviour : MonoBehaviour
 {
     float currentTime = 0f;
-    float startingTime = 180f;
+    float startingTime = 300f;
     public GameObject winScreen;
     public GameObject loseScreen;
     public Text score;
@@ -35,25 +35,25 @@ public class UIBehaviour : MonoBehaviour
         else
         {
         
-            if (Score.currentScore > 9 && PlayerController.numberOfPlayers == 1)
+            if (Score.currentScore > 19 && PlayerController.numberOfPlayers == 1)
             {
                 winScreen.SetActive(true);
                 score.enabled = true;
                 exitButton.SetActive(true);
             }
-            else if (Score.currentScore > 14 && PlayerController.numberOfPlayers == 2)
+            else if (Score.currentScore > 29 && PlayerController.numberOfPlayers == 2)
             {
                 winScreen.SetActive(true);
                 score.enabled = true;
                 exitButton.SetActive(true);
             }
-            else if (Score.currentScore > 19 && PlayerController.numberOfPlayers == 3)
+            else if (Score.currentScore > 39 && PlayerController.numberOfPlayers == 3)
             {
                 winScreen.SetActive(true);
                 score.enabled = true;
                 exitButton.SetActive(true);
             }
-            else if (Score.currentScore > 24 && PlayerController.numberOfPlayers == 4)
+            else if (Score.currentScore > 49 && PlayerController.numberOfPlayers == 4)
             {
                 winScreen.SetActive(true);
                 score.enabled = true;

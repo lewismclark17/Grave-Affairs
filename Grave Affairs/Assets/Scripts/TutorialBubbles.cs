@@ -6,6 +6,9 @@ public class TutorialBubbles : MonoBehaviour
 {
     public GameObject plagueBubble;
     public GameObject soldierBubble;
+    public GameObject priestBubble;
+    public PrepTable prepTable;
+    
     PlayerController[] players = null;
 
     void Start()
@@ -13,6 +16,7 @@ public class TutorialBubbles : MonoBehaviour
         Debug.Log("test");
         plagueBubble.SetActive(false);
         soldierBubble.SetActive(false);
+        priestBubble.SetActive(false);
     }
 
     public void GetPlayers()
@@ -41,6 +45,15 @@ public class TutorialBubbles : MonoBehaviour
             {
                 plagueBubble.SetActive(false);
             }
+
+            if (PlayerCarryingPriest() && !prepTable.hasBody)
+            {
+                priestBubble.SetActive(true);
+            }
+            else
+            {
+                priestBubble.SetActive(false);
+            }
         }
     }
 
@@ -61,6 +74,18 @@ public class TutorialBubbles : MonoBehaviour
         foreach (PlayerController player in players)
         {
             if (player.HasPlagueCorpse())
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    bool PlayerCarryingPriest()
+    {
+        foreach (PlayerController player in players)
+        {
+            if (player.HasDirtyCorpse())
             {
                 return true;
             }
