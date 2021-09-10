@@ -34,6 +34,7 @@ public class BoatCoffin : MonoBehaviour
         hasBody = true;
         priestPic.SetActive(false);
         redBookPic.SetActive(true);
+        FindObjectsOfType<BookPile>()[0].Highlight();
 
         if (corpse.corpseType == Corpse.CorpseType.King)
         {
@@ -60,6 +61,7 @@ public class BoatCoffin : MonoBehaviour
         priestPic.SetActive(false);
         redBookPic.SetActive(false);
         buttonPrompt.SetActive(true);
+        FindObjectsOfType<BookPile>()[0].StopHighlight();
 
         if (item.itemType == Item.ItemType.RedBook)
         {

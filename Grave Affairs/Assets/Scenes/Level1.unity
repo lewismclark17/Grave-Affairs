@@ -52535,6 +52535,7 @@ GameObject:
   - component: {fileID: 1367030061}
   - component: {fileID: 1367030063}
   - component: {fileID: 1367030062}
+  - component: {fileID: 1367030064}
   m_Layer: 11
   m_Name: BookPile
   m_TagString: Untagged
@@ -52585,6 +52586,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.250033, y: 4.850559, z: 6.1404324}
   m_Center: {x: 2.3696053, y: 2.45644, z: 0.88008875}
+--- !u!114 &1367030064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367030060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 1
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1001 &1367523780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86355,6 +86374,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 125838678}
     m_Modifications:
+    - target: {fileID: 1382886869795467216, guid: 9834b4b5bf7ee9b49bd214aabf1c792e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1537634071848752671, guid: 9834b4b5bf7ee9b49bd214aabf1c792e,
         type: 3}
       propertyPath: m_IsActive
@@ -86463,7 +86487,7 @@ PrefabInstance:
     - target: {fileID: 5576532942950913489, guid: 9834b4b5bf7ee9b49bd214aabf1c792e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5750817334825242682, guid: 9834b4b5bf7ee9b49bd214aabf1c792e,
         type: 3}
