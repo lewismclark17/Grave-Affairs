@@ -428,6 +428,8 @@ MonoBehaviour:
   variant2: {fileID: 4190476274052196337}
   variant3: {fileID: 6211076615490500468}
   variant4: {fileID: 4760801317615343923}
+  tutorialBubbles: {fileID: 8421466288643040340, guid: 9b3b1753a5e3c6144b34084ede0f6cd2,
+    type: 3}
   instructions: {fileID: 4515168270667858314, guid: 5c228c34f086d0149b48a1f3a1f0aee8,
     type: 3}
 --- !u!95 &3798464120399581973

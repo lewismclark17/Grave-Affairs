@@ -10,6 +10,7 @@ public class StartScreen : MonoBehaviour
     public TMP_Text instructions;
     public int bodyRequirement = 0;
     public GameObject playerManager, tutorialScreen, joinText;
+    public TutorialBubbles tutorialBubbles;
 
     void Awake()
     {
@@ -44,6 +45,7 @@ public class StartScreen : MonoBehaviour
             instructions.enabled = true;
             yield return StartCoroutine(WaitForRealSeconds(5f));
             instructions.enabled = false;
+            tutorialBubbles.GetPlayers();
         }
         else
         {

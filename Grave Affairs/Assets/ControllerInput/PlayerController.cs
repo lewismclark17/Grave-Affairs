@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject variant1, variant2, variant3, variant4;
 
+    public TutorialBubbles tutorialBubbles;
+
     Animator animator;
 
     //public GameObject pauseMenu;
@@ -136,7 +138,6 @@ public class PlayerController : MonoBehaviour
             Corpse corpse = GetCorpse();
             if (corpse != null)
             {
-                Debug.Log("CORPSE" + corpse.name);
                 carriedCorpse = corpse;
                 carriedCorpse.dragspot.GetComponent<Rigidbody>().isKinematic = true;
                 if (carriedItem)
@@ -145,7 +146,7 @@ public class PlayerController : MonoBehaviour
                     carriedItem.GetComponent<Rigidbody>().isKinematic = false;
                     carriedItem = null;
                 }
-            } 
+            }
         }
         else
         {
@@ -367,5 +368,15 @@ public class PlayerController : MonoBehaviour
     public bool HasDirtyCorpse()
     {
         return carriedCorpse != null && carriedCorpse.canBePrepared && !carriedCorpse.isClean;
+    }
+
+    public bool HasSoldierCorpse()
+    {
+        return carriedCorpse != null && carriedCorpse.canBeBuried;
+    }
+
+    public bool HasPlagueCorpse()
+    {
+        return carriedCorpse != null && carriedCorpse.canBeIncinerated;
     }
 }
