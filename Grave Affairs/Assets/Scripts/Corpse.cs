@@ -12,11 +12,28 @@ public class Corpse : MonoBehaviour
     public enum CorpseType {None, King, Noble, Priest};
     public CorpseType corpseType;
     public static Cart corpseCart;
+    public float timeSinceLastInteracted;
+    public float deactivateDelay;
 
     /*void FixedUpdate()
     {
         dragspot.MovePosition(dragspot.position + Vector3.up * Time.deltaTime);
     }*/
+
+    void Start()
+    {
+        timeSinceLastInteracted = Time.time;
+    }
+
+    void Update()
+    {
+        timeSinceLastInteracted += Time.deltaTime;
+        if (timeSinceLastInteracted > deactivateDelay)
+        {
+            DeactivateRagdoll();
+        }
+    }
+
     public void Burn()
     {
         GameObject actualBody = transform.Find(actualBodyName).gameObject;
@@ -55,6 +72,23 @@ public class Corpse : MonoBehaviour
         if (GetNumValidCorpses() <= 3)
         {
             corpseCart.ActivateNextWave();
+        }
+    }
+
+    public void ActivateRagdoll()
+    {
+        timeSinceLastInteracted = 0f;
+        foreach (Rigidbody rb in GetComponentsInChildren<Rigidbody>())
+        {
+            rb.isKinematic = false;
+        }
+    }
+
+    public void DeactivateRagdoll()
+    {
+        foreach (Rigidbody rb in GetComponentsInChildren<Rigidbody>())
+        {
+            rb.isKinematic = true;
         }
     }
 

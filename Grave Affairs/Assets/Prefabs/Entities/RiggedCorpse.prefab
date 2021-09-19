@@ -346,6 +346,13 @@ MonoBehaviour:
   dragspot: {fileID: 2976384798896541123}
   burnt: {fileID: 2100000, guid: 2d41785bcf4d11b4ab8c7f21edb79bcc, type: 2}
   actualBodyName: dead_body_new
+  canBeIncinerated: 0
+  canBeBuried: 0
+  canBePrepared: 0
+  isClean: 0
+  isDealtWith: 0
+  corpseType: 0
+  deactivateDelay: 10
 --- !u!1 &2707766177952049475
 GameObject:
   m_ObjectHideFlags: 0

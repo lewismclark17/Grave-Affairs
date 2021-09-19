@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour
         if (carriedCorpse)
         {
             carriedCorpse.dragspot.MovePosition(dragspot.transform.position);
+            carriedCorpse.timeSinceLastInteracted = 0f;
         }
 
         if (carriedItem)
@@ -138,6 +139,7 @@ public class PlayerController : MonoBehaviour
             Corpse corpse = GetCorpse();
             if (corpse != null)
             {
+                corpse.ActivateRagdoll();
                 carriedCorpse = corpse;
                 carriedCorpse.dragspot.GetComponent<Rigidbody>().isKinematic = true;
                 if (carriedItem)
@@ -244,6 +246,24 @@ public class PlayerController : MonoBehaviour
         {
             prepTable.CleanCorpse();
         }
+    }
+
+    public void OnDebugUp()
+    {
+        foreach (Corpse corpse in FindObjectsOfType<Corpse>())
+        {
+            corpse.ActivateRagdoll();
+        }
+        Debug.Log("it activated");
+    }
+
+    public void OnDebugDown()
+    {
+        foreach (Corpse corpse in FindObjectsOfType<Corpse>())
+        {
+            corpse.DeactivateRagdoll();
+        }
+        Debug.Log("it deactivated");
     }
 
     BookPile GetBookPile()

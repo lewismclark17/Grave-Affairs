@@ -9,12 +9,15 @@ public class Cart : MonoBehaviour
 
     public GameObject priestRef, soldierRef, plagueRef;
 
-    public float sec = 5.5f;
+    public float sec = 5f;
 
     public float rowSpacing, colSpacing, verSpacing;
     
     public int rowSize, colSize;
 
+    float timeOfLastWave;
+
+    public float timeBetweenWaves;
     Animator animator;
 
     Vector3 CartCorpsesOriginalPosition;
@@ -28,11 +31,20 @@ public class Cart : MonoBehaviour
         GenerateCorpses(2, 3, 3, 5, 1, 2);
         Corpse.corpseCart = this;
         animator = GetComponentInParent<Animator>();
+        timeOfLastWave = Time.time;
+    }
+
+    void Update()
+    {
+        if (Time.time - timeOfLastWave > timeBetweenWaves)
+        {
+            ActivateNextWave();
+        }
     }
 
     public void CorpseMagic()
     {
-        cartCorpses.transform.parent = null;
+        cartCorpses.transform.parent = null;       
         Debug.Log("corpse magic TADA");
     }
 
@@ -65,6 +77,7 @@ public class Cart : MonoBehaviour
     public void ActivateNextWave()
     {
         //Debug.Log("activatenextwave called");
+        timeOfLastWave = Time.time;
         animator.SetTrigger("NeedMoreCorpses");
         cartCorpses.transform.DetachChildren();
         cartCorpses.transform.position = CartCorpsesOriginalPosition;

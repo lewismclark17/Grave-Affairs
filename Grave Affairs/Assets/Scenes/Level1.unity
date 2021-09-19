@@ -86573,6 +86573,21 @@ PrefabInstance:
       propertyPath: m_Avatar
       value: 
       objectReference: {fileID: 1528118536}
+    - target: {fileID: 2103767180894217805, guid: 6f0e34e185f3eec429a4235750705b12,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103767180894217842, guid: 6f0e34e185f3eec429a4235750705b12,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103767180970808205, guid: 6f0e34e185f3eec429a4235750705b12,
+        type: 3}
+      propertyPath: timeBetweenWaves
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6264286097066149126, guid: 6f0e34e185f3eec429a4235750705b12,
         type: 3}
       propertyPath: m_RootOrder
