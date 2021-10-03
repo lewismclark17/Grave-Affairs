@@ -187,6 +187,7 @@ public class PlayerController : MonoBehaviour
         PrepTable prepTable = GetPrepTable();
         BoatCoffin boat = GetBoatCoffin();
         BookPile bookPile = GetBookPile();
+        Furnace furnace = GetFurnace();
 
         if (prepTable != null)
         {
@@ -202,6 +203,16 @@ public class PlayerController : MonoBehaviour
             else if (!prepTable.hasBody && carriedCorpse && carriedCorpse.canBePrepared && !carriedCorpse.isClean)
             {
                 prepTable.PlaceBody(carriedCorpse);
+                carriedCorpse.gameObject.SetActive(false);
+                carriedCorpse = null;
+            }
+        }
+
+        if (furnace != null)
+        {
+            if (carriedCorpse && carriedCorpse.canBeIncinerated)
+            {
+                furnace.PlaceBody(carriedCorpse);
                 carriedCorpse.gameObject.SetActive(false);
                 carriedCorpse = null;
             }
@@ -241,10 +252,15 @@ public class PlayerController : MonoBehaviour
 
     public void OnMinigameButton()
     {
+        Furnace furnace = GetFurnace();
         PrepTable prepTable = GetPrepTable();
         if (prepTable && prepTable.hasBody)
         {
             prepTable.CleanCorpse();
+        }
+        else if (furnace && furnace.hasBody)
+        {
+            furnace.PushCorpse();
         }
     }
 
@@ -294,6 +310,24 @@ public class PlayerController : MonoBehaviour
         foreach (Collider col in hitcolliders)
         {
             PrepTable target = col.gameObject.GetComponentInParent<PrepTable>(); 
+            if (target != null)
+            {
+                return target;
+            }
+        }
+        return null;
+    }
+
+    Furnace GetFurnace()
+    {
+        Collider[] hitcolliders = Physics.OverlapBox(
+            interactor.transform.position, 
+            interactor.transform.localScale / 2, 
+            interactor.transform.rotation);
+        
+        foreach (Collider col in hitcolliders)
+        {
+            Furnace target = col.gameObject.GetComponentInParent<Furnace>(); 
             if (target != null)
             {
                 return target;

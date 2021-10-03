@@ -23,24 +23,29 @@ public class ProgressBar : MonoBehaviour
         Vector3 scale = transform.localScale;
         scale.x = barLength * progress;
         transform.localScale = scale;
-        if (progress == 0)
+        if (sponge != null)
         {
-            sponge.SetActive(false);
-        }
-        else
-        {
-            sponge.SetActive(true);
-            spongeTime = spongeAnimationTime;
-        }
-        
+            if (progress == 0)
+            {
+                sponge.SetActive(false);
+            }
+            else
+            {
+                sponge.SetActive(true);
+                spongeTime = spongeAnimationTime;
+            }
+        }   
     }
 
     void Update()
     {
-        spongeTime -= Time.deltaTime;
-        if (spongeTime < 0)
+        if (sponge != null)
         {
-            sponge.SetActive(false);
+            spongeTime -= Time.deltaTime;
+            if (spongeTime < 0)
+            {
+                sponge.SetActive(false);
+            }
         }
     }
 }
