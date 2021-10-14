@@ -353,7 +353,8 @@ MonoBehaviour:
   isClean: 0
   isDealtWith: 0
   corpseType: 0
-  deactivateDelay: 10
+  timeSinceLastInteracted: 0
+  deactivateDelay: 20
 --- !u!114 &7966314690036480757
 MonoBehaviour:
   m_ObjectHideFlags: 0

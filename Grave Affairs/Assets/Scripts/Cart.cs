@@ -15,6 +15,8 @@ public class Cart : MonoBehaviour
     
     public int rowSize, colSize;
 
+    public int minNumSoldiers, maxNumSoldiers, minNumPlagued, maxNumPlagued, minNumPriests, maxNumPriests;
+
     float timeOfLastWave;
 
     public float timeBetweenWaves;
@@ -28,7 +30,7 @@ public class Cart : MonoBehaviour
     {
         CartCorpsesOriginalPosition = cartCorpses.transform.position;
         CartCorpsesOriginalRotation = cartCorpses.transform.rotation;
-        GenerateCorpses(2, 3, 3, 5, 1, 2);
+        GenerateCorpses();
         Corpse.corpseCart = this;
         animator = GetComponentInParent<Animator>();
         timeOfLastWave = Time.time;
@@ -44,11 +46,12 @@ public class Cart : MonoBehaviour
 
     public void CorpseMagic()
     {
-        cartCorpses.transform.parent = null;       
+        //cartCorpses.transform.parent = null;       
         Debug.Log("corpse magic TADA");
+        cartCorpses.transform.DetachChildren();
     }
 
-    void GenerateCorpses(int minNumSoldiers, int maxNumSoldiers, int minNumPlagued, int maxNumPlagued, int minNumPriests, int maxNumPriests)
+    void GenerateCorpses()
     {
         int numSoldiers = Random.Range(minNumSoldiers, maxNumSoldiers + 1);
         int numPlagued = Random.Range(minNumPlagued, maxNumPlagued + 1);
@@ -79,10 +82,10 @@ public class Cart : MonoBehaviour
         //Debug.Log("activatenextwave called");
         timeOfLastWave = Time.time;
         animator.SetTrigger("NeedMoreCorpses");
-        cartCorpses.transform.DetachChildren();
-        cartCorpses.transform.position = CartCorpsesOriginalPosition;
-        cartCorpses.transform.rotation = CartCorpsesOriginalRotation;
-        cartCorpses.transform.parent = transform;
-        GenerateCorpses(2, 3, 3, 5, 1, 2);
+        //cartCorpses.transform.DetachChildren();
+        //cartCorpses.transform.position = CartCorpsesOriginalPosition;
+        //cartCorpses.transform.rotation = CartCorpsesOriginalRotation;
+        //cartCorpses.transform.parent = transform;
+        GenerateCorpses();
     }
 }

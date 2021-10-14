@@ -352,7 +352,8 @@ MonoBehaviour:
   isClean: 1
   isDealtWith: 0
   corpseType: 2
-  deactivateDelay: 10
+  timeSinceLastInteracted: 0
+  deactivateDelay: 20
 --- !u!1 &2707766177952049475
 GameObject:
   m_ObjectHideFlags: 0

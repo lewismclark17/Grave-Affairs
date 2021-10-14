@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class UIBehaviour : MonoBehaviour
 {
     float currentTime = 0f;
-    float startingTime = 300f;
+    public float startingTime = 300f;
     public GameObject winScreen;
     public GameObject loseScreen;
     public Text score;

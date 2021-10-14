@@ -22,7 +22,7 @@ public class Corpse : MonoBehaviour
 
     void Start()
     {
-        timeSinceLastInteracted = Time.time;
+        timeSinceLastInteracted = 0f;
     }
 
     void Update()
