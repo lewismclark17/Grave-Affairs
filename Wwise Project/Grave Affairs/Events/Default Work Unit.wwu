@@ -86,6 +86,16 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop" ID="{0A04C014-60C0-417D-9370-73307E1154E0}">
+							<ChildrenList>
+								<Action Name="" ID="{BB6D46FE-3382-4E9A-B092-66D6D142F1FF}" ShortID="727733944">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Menu" ID="{A5D1A007-C805-4C14-9EC0-AF3B550DF7C2}" ShortID="928333740">

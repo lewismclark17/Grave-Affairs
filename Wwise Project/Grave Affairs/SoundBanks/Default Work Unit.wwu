@@ -15,6 +15,7 @@
 				<SoundBank Name="GA_TEST2" ID="{AB69E746-38E0-4058-9BF5-C3A5A65D644D}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Default Work Unit" ID="{2452F348-A4A2-411B-AA66-827839594DA0}" WorkUnitID="{2452F348-A4A2-411B-AA66-827839594DA0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop" ID="{0A04C014-60C0-417D-9370-73307E1154E0}" WorkUnitID="{2452F348-A4A2-411B-AA66-827839594DA0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}" WorkUnitID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

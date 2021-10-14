@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\theju\Desktop\Grave Affairs Github\Grave-Affairs\Wwise Project\Grave Affairs\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\theju\Desktop\Grave Affairs Github\Grave-Affairs\Wwise Project\Grave Affairs\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\theju\Desktop\Grave Affairs Github\Grave-Affairs\Wwise Project\Grave Affairs\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\theju\Desktop\Audio Projects\In Progress\Grave Affairs CRE312 2021\Wwise Project\Grave Affairs\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\theju\Desktop\Grave Affairs Github\Grave-Affairs\Wwise Project\Grave Affairs\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1829204522" Language="SFX" Hash="4142954014">
+		<SoundBank Id="1829204522" Language="SFX" Hash="892417238">
 			<ObjectPath>\SoundBanks\Default Work Unit\GA_TEST2</ObjectPath>
 			<ShortName>GA_TEST2</ShortName>
 			<Path>GA_TEST2.bnk</Path>
@@ -117,6 +117,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="788884573" Name="Stop" ObjectPath="\Events\Default Work Unit\Actions\Stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4051042642" Name="Time_Up" ObjectPath="\Events\Default Work Unit\Timer\Time_Up" DurationType="OneShot" DurationMin="5.318310" DurationMax="5.318310">
 					<IncludedMemoryFiles>
 						<File Id="764368245" Language="SFX">
