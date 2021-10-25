@@ -10,7 +10,7 @@ public class MenuScreen : MonoBehaviour
 
     public void Begin()
     {
-        SceneManager.LoadScene("Level3");
+        SceneManager.LoadScene("Cutscene1");
     }
 
     public void Quit()

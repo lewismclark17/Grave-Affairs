@@ -12,6 +12,7 @@ public class UIBehaviour : MonoBehaviour
     public GameObject loseScreen;
     public Text score;
     public GameObject exitButton, continueButton;
+    public int scoreReq1P, scoreReq2P, scoreReq3P, scoreReq4P;
 
     [SerializeField] Text countdownText;
 
@@ -36,19 +37,19 @@ public class UIBehaviour : MonoBehaviour
         else
         {
         
-            if (Score.currentScore > 19 && PlayerController.numberOfPlayers == 1)
+            if (Score.currentScore >= scoreReq1P && PlayerController.numberOfPlayers == 1)
             {
                 ShowWinScreen();
             }
-            else if (Score.currentScore > 34 && PlayerController.numberOfPlayers == 2)
+            else if (Score.currentScore >= scoreReq2P && PlayerController.numberOfPlayers == 2)
             {
                 ShowWinScreen();
             }
-            else if (Score.currentScore > 49 && PlayerController.numberOfPlayers == 3)
+            else if (Score.currentScore >= scoreReq3P && PlayerController.numberOfPlayers == 3)
             {
                 ShowWinScreen();
             }
-            else if (Score.currentScore > 69 && PlayerController.numberOfPlayers == 4)
+            else if (Score.currentScore >= scoreReq4P && PlayerController.numberOfPlayers == 4)
             {
                 ShowWinScreen();
             } 
@@ -63,7 +64,7 @@ public class UIBehaviour : MonoBehaviour
     {
         winScreen.SetActive(true);
         score.enabled = true;
-        if (SceneManager.GetActiveScene().name == "Level1")
+        if (SceneManager.GetActiveScene().name == "Level3")
         {
             exitButton.SetActive(true);
         }

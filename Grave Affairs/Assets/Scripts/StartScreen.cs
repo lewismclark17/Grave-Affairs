@@ -8,13 +8,18 @@ using UnityEngine.SceneManagement;
 public class StartScreen : MonoBehaviour
 {
     public TMP_Text instructions;
-    public int bodyRequirement = 0;
     public GameObject playerManager, tutorialScreen, joinText;
     public TutorialBubbles tutorialBubbles;
+    UIBehaviour uIBehaviour;
 
     void Awake()
     {
         StartCoroutine(StartDelay());   
+    }
+
+    void Start()
+    {
+        uIBehaviour = GetComponentInChildren<UIBehaviour>();
     }
 
     public static IEnumerator WaitForRealSeconds(float time)
@@ -59,23 +64,19 @@ public class StartScreen : MonoBehaviour
     {
         if (PlayerController.numberOfPlayers == 1)
         {
-            bodyRequirement = 20;
-            instructions.text = "Deposit " + bodyRequirement +  " bodies in the mass grave before time runs out!";
+            instructions.text = "Dispose of " + uIBehaviour.scoreReq1P +  " bodies before time runs out";
         }
         else if (PlayerController.numberOfPlayers == 2)
         {
-            bodyRequirement = 35;
-            instructions.text = "Deposit " + bodyRequirement +  " bodies in the mass grave before time runs out!";
+            instructions.text = "Dispose of " + uIBehaviour.scoreReq2P +  " bodies before time runs out";
         }
         else if (PlayerController.numberOfPlayers == 3)
         {
-            bodyRequirement = 50;
-            instructions.text = "Deposit " + bodyRequirement +  " bodies in the mass grave before time runs out!"; 
+            instructions.text = "Dispose of " + uIBehaviour.scoreReq3P +  " bodies before time runs out"; 
         }
         else if (PlayerController.numberOfPlayers == 4)
         {
-            bodyRequirement = 70;
-            instructions.text = "Deposit " + bodyRequirement +  " bodies in the mass grave before time runs out!";
+            instructions.text = "Dispose of " + uIBehaviour.scoreReq4P +  " bodies before time runs out";
         }
     }
 }
