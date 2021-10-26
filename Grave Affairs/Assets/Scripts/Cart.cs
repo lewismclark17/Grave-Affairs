@@ -28,8 +28,8 @@ public class Cart : MonoBehaviour
 
     void Start()
     {
-        CartCorpsesOriginalPosition = cartCorpses.transform.position;
-        CartCorpsesOriginalRotation = cartCorpses.transform.rotation;
+        //CartCorpsesOriginalPosition = cartCorpses.transform.position;
+        //CartCorpsesOriginalRotation = cartCorpses.transform.rotation;
         GenerateCorpses();
         Corpse.corpseCart = this;
         animator = GetComponentInParent<Animator>();
@@ -60,19 +60,20 @@ public class Cart : MonoBehaviour
         List<GameObject> corpses = new List<GameObject>();
         for (int i = 0; i < numSoldiers; i++)
         { 
-            corpses.Add(Instantiate(soldierRef, cartCorpses.transform));     
+            corpses.Add(Instantiate(soldierRef, Vector3.zero, Quaternion.identity));     
         }
         for (int i = 0; i < numPlagued; i++)
         {
-            corpses.Add(Instantiate(plagueRef, cartCorpses.transform));     
+            corpses.Add(Instantiate(plagueRef, Vector3.zero, Quaternion.identity));     
         }
         for (int i = 0; i < numPriests; i++)
         {
-            corpses.Add(Instantiate(priestRef, cartCorpses.transform));     
+            corpses.Add(Instantiate(priestRef, Vector3.zero, Quaternion.identity));     
         }
         corpses = corpses.OrderBy(a => Random.value).ToList();
         for (int i = 0; i < corpses.Count; i++)
         {
+            corpses[i].transform.SetParent(cartCorpses.transform, false);
             corpses[i].transform.localPosition = new Vector3(i%rowSize*rowSpacing, i/(rowSize*colSize)*verSpacing, i/rowSize%colSize*colSpacing);
         }
     }

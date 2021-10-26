@@ -28,7 +28,7 @@ Transform:
   m_LocalScale: {x: 0.50544673, y: 0.50544673, z: 0.50544673}
   m_Children: []
   m_Father: {fileID: 5921680352984524396}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2979050362938178198
 GameObject:
@@ -145,6 +145,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3222626605475953343}
+  - {fileID: 5908401930366952689}
   - {fileID: 2103767181359616286}
   m_Father: {fileID: 6264286097066149126}
   m_RootOrder: 0
@@ -226,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86b073d01547e0f40975dd52846d1d95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cartCorpses: {fileID: 2103767181359616287}
+  cartCorpses: {fileID: 7423299776983200036}
   priestRef: {fileID: 2706478546340872799, guid: 8fb2751afe0002d4f9f4148ec93a1268,
     type: 3}
   soldierRef: {fileID: 2706478546340872799, guid: 816982a79d109dc408872f3b8fb0374b,
@@ -239,6 +240,12 @@ MonoBehaviour:
   verSpacing: 1
   rowSize: 2
   colSize: 4
+  minNumSoldiers: 0
+  maxNumSoldiers: 0
+  minNumPlagued: 0
+  maxNumPlagued: 0
+  minNumPriests: 0
+  maxNumPriests: 0
   timeBetweenWaves: 100
 --- !u!1 &6747772853027577788
 GameObject:
@@ -391,3 +398,33 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!1 &7423299776983200036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5908401930366952689}
+  m_Layer: 9
+  m_Name: CorpseSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5908401930366952689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7423299776983200036}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.98477626, y: 0.071, z: 0.87607574}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5921680352984524396}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028441, g: 0.22571471, b: 0.30692336, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028468, g: 0.22571528, b: 0.30692434, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8441,7 +8441,7 @@ PrefabInstance:
     - target: {fileID: 2103767180970808205, guid: 6f0e34e185f3eec429a4235750705b12,
         type: 3}
       propertyPath: timeBetweenWaves
-      value: 100
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5921680352984524396, guid: 6f0e34e185f3eec429a4235750705b12,
         type: 3}
@@ -21992,7 +21992,7 @@ MonoBehaviour:
   timerColour1: {r: 1, g: 0.74837667, b: 0.2688679, a: 0}
   timerColour2: {r: 0.8113208, g: 0.3621583, b: 0.11863652, a: 0}
   timerColour3: {r: 0.735849, g: 0.19647735, b: 0.08677464, a: 0}
-  rotationTime: 180
+  rotationTime: 120
   currentTime: 0
 --- !u!1001 &685941775
 PrefabInstance:
@@ -33393,16 +33393,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a212b31380c57e40bd7f87e0a01e494, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingTime: 180
+  startingTime: 120
   winScreen: {fileID: 646091409}
   loseScreen: {fileID: 1440176213}
   score: {fileID: 495836917}
   exitButton: {fileID: 915288514}
   continueButton: {fileID: 1193564245}
-  scoreReq1P: 10
-  scoreReq2P: 20
-  scoreReq3P: 25
-  scoreReq4P: 35
+  scoreReq1P: 8
+  scoreReq2P: 12
+  scoreReq3P: 16
+  scoreReq4P: 20
   countdownText: {fileID: 1676270480}
 --- !u!114 &1081149184
 MonoBehaviour:

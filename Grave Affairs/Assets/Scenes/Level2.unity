@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028441, g: 0.22571471, b: 0.30692336, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028468, g: 0.22571528, b: 0.30692434, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1399,16 +1399,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a212b31380c57e40bd7f87e0a01e494, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingTime: 240
+  startingTime: 150
   winScreen: {fileID: 920260348}
   loseScreen: {fileID: 1970338508}
   score: {fileID: 1796105215}
   exitButton: {fileID: 1596171903}
   continueButton: {fileID: 1730762011}
   scoreReq1P: 15
-  scoreReq2P: 25
-  scoreReq3P: 35
-  scoreReq4P: 50
+  scoreReq2P: 20
+  scoreReq3P: 25
+  scoreReq4P: 30
   countdownText: {fileID: 185635718}
 --- !u!114 &21762259
 MonoBehaviour:
@@ -18014,7 +18014,7 @@ MonoBehaviour:
   timerColour1: {r: 1, g: 0.74837667, b: 0.2688679, a: 0}
   timerColour2: {r: 0.8113208, g: 0.3621583, b: 0.11863652, a: 0}
   timerColour3: {r: 0.735849, g: 0.19647735, b: 0.08677464, a: 0}
-  rotationTime: 240
+  rotationTime: 150
   currentTime: 0
 --- !u!1001 &557511646
 PrefabInstance:
@@ -54755,6 +54755,11 @@ PrefabInstance:
         type: 3}
       propertyPath: minNumSoldiers
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103767180970808205, guid: 6f0e34e185f3eec429a4235750705b12,
+        type: 3}
+      propertyPath: timeBetweenWaves
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5921680352984524396, guid: 6f0e34e185f3eec429a4235750705b12,
         type: 3}
