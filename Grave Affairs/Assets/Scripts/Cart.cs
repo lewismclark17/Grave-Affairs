@@ -28,8 +28,8 @@ public class Cart : MonoBehaviour
 
     void Start()
     {
-        //CartCorpsesOriginalPosition = cartCorpses.transform.position;
-        //CartCorpsesOriginalRotation = cartCorpses.transform.rotation;
+        CartCorpsesOriginalPosition = cartCorpses.transform.position;
+        CartCorpsesOriginalRotation = cartCorpses.transform.rotation;
         GenerateCorpses();
         Corpse.corpseCart = this;
         animator = GetComponentInParent<Animator>();
@@ -74,7 +74,12 @@ public class Cart : MonoBehaviour
         for (int i = 0; i < corpses.Count; i++)
         {
             corpses[i].transform.SetParent(cartCorpses.transform, false);
-            corpses[i].transform.localPosition = new Vector3(i%rowSize*rowSpacing, i/(rowSize*colSize)*verSpacing, i/rowSize%colSize*colSpacing);
+            corpses[i].transform.Rotate(-90, 0, 0);
+            float row = i%rowSize * rowSpacing;
+            float ver = i/(rowSize*colSize);
+            float col = i/rowSize%colSize;
+            Vector3 position = new Vector3(row * rowSpacing, ver * verSpacing, col * colSpacing);
+            corpses[i].transform.localPosition = position;
         }
     }
 

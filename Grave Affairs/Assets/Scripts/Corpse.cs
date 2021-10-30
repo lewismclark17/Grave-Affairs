@@ -23,6 +23,7 @@ public class Corpse : MonoBehaviour
     void Start()
     {
         timeSinceLastInteracted = 0f;
+        //DeactivateRagdoll();
     }
 
     void Update()
