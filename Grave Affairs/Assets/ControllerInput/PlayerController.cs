@@ -23,6 +23,9 @@ public class PlayerController : MonoBehaviour
 
     public TutorialBubbles tutorialBubbles;
 
+    [HideInInspector]
+    public Button winLoseScreenButton;
+
     Animator animator;
 
     //public GameObject pauseMenu;
@@ -133,6 +136,10 @@ public class PlayerController : MonoBehaviour
 
     public void OnInteract()
     {
+        if (winLoseScreenButton != null)
+        {
+            winLoseScreenButton.onClick.Invoke();
+        }
         BoatCoffin boat = GetBoatCoffin(); 
 
         if (carriedCorpse == null)
@@ -180,7 +187,7 @@ public class PlayerController : MonoBehaviour
             carriedItem.GetComponent<Rigidbody>().isKinematic = false;
             carriedItem = null;
 
-        }  
+        }    
     }
 
     public void OnAltInteract()

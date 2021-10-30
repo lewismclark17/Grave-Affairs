@@ -13,6 +13,7 @@ public class UIBehaviour : MonoBehaviour
     public Text score;
     public GameObject exitButton, continueButton;
     public int scoreReq1P, scoreReq2P, scoreReq3P, scoreReq4P;
+    public bool finishScreen;
 
     [SerializeField] Text countdownText;
 
@@ -62,23 +63,37 @@ public class UIBehaviour : MonoBehaviour
 
     void ShowWinScreen()
     {
+        finishScreen = true;
         winScreen.SetActive(true);
         score.enabled = true;
         if (SceneManager.GetActiveScene().name == "Level3")
         {
             exitButton.SetActive(true);
+            SetButtonForPlayers(exitButton);
         }
         else
         {
             continueButton.SetActive(true);
+            SetButtonForPlayers(continueButton);
         }
     }
 
     void ShowLoseScreen()
     {
+        finishScreen = true;
         loseScreen.SetActive(true);
         score.enabled = true;
         exitButton.SetActive(true);
+        SetButtonForPlayers(exitButton);
+    }
+
+    void SetButtonForPlayers(GameObject button)
+    {
+        PlayerController[] players = FindObjectsOfType<PlayerController>();
+        foreach (PlayerController player in players)
+        {
+            player.winLoseScreenButton = button.GetComponent<Button>();
+        }
     }
 }
 
