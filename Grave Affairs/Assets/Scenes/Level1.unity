@@ -33399,10 +33399,10 @@ MonoBehaviour:
   score: {fileID: 495836917}
   exitButton: {fileID: 915288514}
   continueButton: {fileID: 1193564245}
-  scoreReq1P: 8
-  scoreReq2P: 12
-  scoreReq3P: 16
-  scoreReq4P: 20
+  scoreReq1P: 6
+  scoreReq2P: 10
+  scoreReq3P: 14
+  scoreReq4P: 18
   finishScreen: 0
   countdownText: {fileID: 1676270480}
 --- !u!114 &1081149184

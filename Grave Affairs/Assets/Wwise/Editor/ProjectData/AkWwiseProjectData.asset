@@ -108,7 +108,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 48f35224a2a41b41aa66827839594da0
     GuidInternal: 
-    m_lastTime: -8585659446844201904
+    m_lastTime: -8585659430233699427
     List:
     - name: Actions
       guid: 69fcd7b4df1bf447ac85e9405975a57c
@@ -181,26 +181,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5338ffe4ba109d42bd33a18e6383b5f9
       Path: Events\Default Work Unit\Vehicles\Boat
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Body_Clean
-      guid: 6835c5e5f566904daf5b98d96b18d1b6
-      id: 3301051131
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 48f35224a2a41b41aa66827839594da0
-      - ElementName: Actions
-        ObjectType: 4
-        guid: 69fcd7b4df1bf447ac85e9405975a57c
-      - ElementName: Body_Clean
-        ObjectType: 3
-        guid: 6835c5e5f566904daf5b98d96b18d1b6
-      Path: Events\Default Work Unit\Actions\Body_Clean
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1

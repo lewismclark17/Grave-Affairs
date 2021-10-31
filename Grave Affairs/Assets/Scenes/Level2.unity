@@ -1404,10 +1404,10 @@ MonoBehaviour:
   score: {fileID: 1796105215}
   exitButton: {fileID: 1596171903}
   continueButton: {fileID: 1730762011}
-  scoreReq1P: 15
-  scoreReq2P: 20
-  scoreReq3P: 25
-  scoreReq4P: 30
+  scoreReq1P: 10
+  scoreReq2P: 15
+  scoreReq3P: 20
+  scoreReq4P: 25
   finishScreen: 0
   countdownText: {fileID: 185635718}
 --- !u!114 &21762259
