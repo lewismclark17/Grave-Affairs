@@ -2192,6 +2192,7 @@ MonoBehaviour:
   scoreReq2P: 25
   scoreReq3P: 35
   scoreReq4P: 45
+  finishScreen: 0
   countdownText: {fileID: 634178422}
 --- !u!114 &52431046
 MonoBehaviour:
@@ -13072,7 +13073,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &321290530
 AudioSource:
   m_ObjectHideFlags: 0
