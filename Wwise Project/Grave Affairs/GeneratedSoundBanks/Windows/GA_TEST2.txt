@@ -5,7 +5,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	1927068452	Menu_Move			\Default Work Unit\Menu\Menu_Move	
 	2149484929	Furnace_Burn			\Default Work Unit\Actions\Furnace_Burn	
 	2339349540	Final_20			\Default Work Unit\Timer\Final_20	
-	3301051131	Body_Clean			\Default Work Unit\Actions\Body_Clean	
 	3767330593	Physics_Interact			\Default Work Unit\Actions\Physics_Interact	
 	4046753069	Menu_Confirm			\Default Work Unit\Menu\Menu_Confirm	
 	4051042642	Time_Up			\Default Work Unit\Timer\Time_Up	

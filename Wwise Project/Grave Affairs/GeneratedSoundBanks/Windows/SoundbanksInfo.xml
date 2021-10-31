@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1829204522" Language="SFX" Hash="2999020206">
+		<SoundBank Id="1829204522" Language="SFX" Hash="3881777119">
 			<ObjectPath>\SoundBanks\Default Work Unit\GA_TEST2</ObjectPath>
 			<ShortName>GA_TEST2</ShortName>
 			<Path>GA_TEST2.bnk</Path>
@@ -54,14 +54,6 @@
 						<File Id="961605485" Language="SFX">
 							<ShortName>Stream.wav</ShortName>
 							<Path>SFX\Stream_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3301051131" Name="Body_Clean" ObjectPath="\Events\Default Work Unit\Actions\Body_Clean" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="537684091" Language="SFX">
-							<ShortName>Cleaning.wav</ShortName>
-							<Path>SFX\Cleaning_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -224,7 +216,6 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="1795056175" Name="Boat" ObjectPath="\Events\Default Work Unit\Vehicles\Boat" DurationType="Infinite"/>
-				<Event Id="3301051131" Name="Body_Clean" ObjectPath="\Events\Default Work Unit\Actions\Body_Clean" DurationType="Infinite"/>
 				<Event Id="4189504243" Name="Cart" ObjectPath="\Events\Default Work Unit\Vehicles\Cart" DurationType="OneShot" DurationMin="12.209977" DurationMax="12.209977"/>
 				<Event Id="2339349540" Name="Final_20" ObjectPath="\Events\Default Work Unit\Timer\Final_20" DurationType="OneShot" DurationMin="22.409416" DurationMax="22.409416"/>
 				<Event Id="2149484929" Name="Furnace_Burn" ObjectPath="\Events\Default Work Unit\Actions\Furnace_Burn" DurationType="OneShot" DurationMin="2.062810" DurationMax="2.927382"/>

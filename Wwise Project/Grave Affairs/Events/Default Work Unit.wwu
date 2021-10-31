@@ -65,17 +65,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Body_Clean" ID="{E5C53568-66F5-4D90-AF5B-98D96B18D1B6}">
-							<ChildrenList>
-								<Action Name="" ID="{1E241B7B-DBD8-4A8D-AB0C-41C046322AE9}" ShortID="739962452">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Cleaning" ID="{E1F33D4E-92EE-4D91-9446-077B89399041}" WorkUnitID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Stop" ID="{0A04C014-60C0-417D-9370-73307E1154E0}">
 							<ChildrenList>
 								<Action Name="" ID="{BB6D46FE-3382-4E9A-B092-66D6D142F1FF}" ShortID="727733944">
