@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1829204522" Language="SFX" Hash="892417238">
+		<SoundBank Id="1829204522" Language="SFX" Hash="2999020206">
 			<ObjectPath>\SoundBanks\Default Work Unit\GA_TEST2</ObjectPath>
 			<ShortName>GA_TEST2</ShortName>
 			<Path>GA_TEST2.bnk</Path>
@@ -42,10 +42,6 @@
 						<File Id="674024429" Language="SFX">
 							<ShortName>Crow_02.wav</ShortName>
 							<Path>SFX\Crow_02_10C4C929.wem</Path>
-						</File>
-						<File Id="960208460" Language="SFX">
-							<ShortName>First LVL Test.wav</ShortName>
-							<Path>SFX\First LVL Test_D79FB2B7.wem</Path>
 						</File>
 						<File Id="982497273" Language="SFX">
 							<ShortName>OWl 2.wav</ShortName>
@@ -220,10 +216,6 @@
 						<File Id="674024429" Language="SFX">
 							<ShortName>Crow_02.wav</ShortName>
 							<Path>SFX\Crow_02_10C4C929.wem</Path>
-						</File>
-						<File Id="960208460" Language="SFX">
-							<ShortName>First LVL Test.wav</ShortName>
-							<Path>SFX\First LVL Test_D79FB2B7.wem</Path>
 						</File>
 						<File Id="982497273" Language="SFX">
 							<ShortName>OWl 2.wav</ShortName>

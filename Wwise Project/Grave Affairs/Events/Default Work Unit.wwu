@@ -7,16 +7,6 @@
 					<ChildrenList>
 						<Event Name="Ambience_lvl01" ID="{C4EB4D98-A8FD-45DF-8E64-592AC037FE39}">
 							<ChildrenList>
-								<Action Name="" ID="{854CA90F-444A-4E2A-A732-080272FB6DF6}" ShortID="1009544620">
-									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Level 1 Mix1A" ID="{522C17F9-E2B5-4C5E-8CD4-23B2FA45C462}" WorkUnitID="{F76792AA-D7CB-47B6-A614-7CC9D86359FE}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 								<Action Name="" ID="{A094CB11-CF82-4AD3-9189-065C5F60549F}" ShortID="669581139">
 									<PropertyList>
 										<Property Name="FadeTime" Type="Real64" Value="1"/>
